@@ -1,0 +1,197 @@
+
+:docinfo: shared
+:!chapter-signifier:
+:section-refsig: подразделе
+:chapter-refsig: разделе
+:toc: macro
+:toc-title: Содержание
+:role5: Заявитель
+:manual3: РП3
+:stage: 01
+:version: 1
+:code: 0026.{stage}.И3-01.00{version}
+:sectnumlevels: 7
+:name1_dokument: Руководство пользователя
+:name2_dokument: РЕДАКТИРОВАНИЕ И ПУБЛИКАЦИЯ СУБСИДИИ НА ПОРТАЛЕ ПРЕДОСТАВЛЕНИЯ МЕР ФИНАНСОВОЙ ГОСУДАРСТВЕННОЙ ПОДДЕРЖКИ ГОСУДАРСТВЕННОЙ ИНТЕГРИРОВАННОЙ ИНФОРМАЦИОННОЙ СИСТЕМЫ УПРАВЛЕНИЯ ОБЩЕСТВЕННЫМИ ФИНАНСАМИ «ЭЛЕКТРОННЫЙ БЮДЖЕТ» 
+:stage: 01
+:version: 1
+:code: И3-01
+:page_all: 123
+
+
+
+include::title_page.adoc[]
+
+// <<<<
+// toc::[]
+// <<<<
+
+== 1
+
+ertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewt
+
+== 2
+
+rtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrt
+
+
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+
+// rtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewt
+
+// * sdfsdfsdfsdfsd1
+// * sdfsdfsdfsdfsd2
+// * sdfsdfsdfsdfsd3
+// * sdfsdfsdfsdfsd4
+// * sdfsdfsdfsdfsd5
+// * sdfsdfsdfsdfsd6
+// * sdfsdfsdfsdfsd1
+// ** sdfsdfsdfsdfsd2
+// ** sdfsdfsdfsdfsd3
+// ** sdfsdfsdfsdfsd4
+// ** sdfsdfsdfsdfsd5
+// ** sdfsdfsdfsdfsd6
+// *** sdfsdfsdfsdfsd1
+// *** sdfsdfsdfsdfsd2
+// *** sdfsdfsdfsdfsd3
+// *** sdfsdfsdfsdfsd4
+// *** sdfsdfsdfsdfsd5
+// ** sdfsdfsdfsdfsd2
+// ** sdfsdfsdfsdfsd3
+// ** sdfsdfsdfsdfsd4
+// ** sdfsdfsdfsdfsd5
+// ** sdfsdfsdfsdfsd6
+// * sdfsdfsdfsdfsd1
+// * sdfsdfsdfsdfsd2
+// * sdfsdfsdfsdfsd3
+// * sdfsdfsdfsdfsd4
+// * sdfsdfsdfsdfsd5
+// * sdfsdfsdfsdfsd6
+// * sdfsdfsdfsdfsd1
+
+// rtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewt
+
+
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// .. sdfsdfsdfsdfsd7
+// .. sdfsdfsdfsdfsd8
+// .. sdfsdfsdfsdfsd9
+// ... sdfsdfsdfsdfsd0
+// ... sdfsdfsdfsdfsd-
+// ... sdfsdfsdfsdfsd=
+// ... sdfsdfsdfsdfsd=
+// .. sdfsdfsdfsdfsd7
+// .. sdfsdfsdfsdfsd8
+// .. sdfsdfsdfsdfsd9
+
+
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+// . sdfsdfsdfsdfsd1
+// . sdfsdfsdfsdfsd2
+// . sdfsdfsdfsdfsd3
+// . sdfsdfsdfsdfsd4
+// . sdfsdfsdfsdfsd5
+// . sdfsdfsdfsdfsd6
+
+// rtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewtrtertewt
+
+// dfsgdgfgsdfgsdfgsdf
+
+// * sdfsdfsdfsdfsd1
+// * sdfsdfsdfsdfsd2
+// * sdfsdfsdfsdfsd3
+// * sdfsdfsdfsdfsd4
+// * sdfsdfsdfsdfsd5
+// * sdfsdfsdfsdfsd6
+// * sdfsdfsdfsdfsd7
+// * sdfsdfsdfsdfsd8
+// * sdfsdfsdfsdfsd1
+// * sdfsdfsdfsdfsd2
+// * sdfsdfsdfsdfsd3
+// * sdfsdfsdfsdfsd4
+// * sdfsdfsdfsdfsd5
+// * sdfsdfsdfsdfsd6
+// * sdfsdfsdfsdfsd7
+// * sdfsdfsdfsdfsd8
+// * sdfsdfsdfsdfsd9
+// * sdfsdfsdfsdfsd0
+// * sdfsdfsdfsdfsd-
+// * sdfsdfsdfsdfsd=
+// * sdfsdfsdfsdfsd=
+
+
+// include::title_page.adoc[]
+
+// <<<<
+// toc::[]
+
+// <<<<
+
+// include::intro_3.adoc[]
+
+// <<<<
+// include::start_us.adoc[]
+
+// <<<<
+// include::otbory.adoc[]
+
+// <<<<
+// include::template_reestr.adoc[]
+    
+
+
+// include::restart.adoc[]
+
+

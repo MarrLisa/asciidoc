@@ -1,0 +1,11 @@
+include::common/__period.adoc[]
+
+[frame=none,grid=none]
+|===
+^| *ВЕДОМОСТЬ* +
+*машинных носителей информации* +
+*Договор {dogovor}  ({step} этап)*
+|===
+
+include::tables/t_vedomoct.adoc[]
+

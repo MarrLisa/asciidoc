@@ -1,0 +1,43 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Описание пиктограмм в автопроверках
+// Содержится в файлах creat_app_accreditation, creat_application, my_profile, my_profole_2, review_applications, review_applications_cz
+
+При прохождении проверки критерии проверки могут иметь следующие статусы, как на <<id_image-g_mp_13, Рисунке {counter:figure-number}>>:
+
+* {failed} (1);
+* {passed} (2);
+* {pending} (3);
+* {received} (4);
+* {rerequest} (5).
+
+
+ifdef::id_image-g_mp_13_2[]
+:id_image-g_mp_13_1:
+
+[[id_image-g_mp_13_1]]
+.Рисунок {counter:figure-number}. Пиктограммы статуса после прохождения автоматической проверки
+image::g_mp_13.png[{image-size1}, align="center"]
+endif::id_image-g_mp_13_2[]
+
+ifndef::id_image-g_mp_13_2[]
+:id_image-g_mp_13_2:
+
+[[id_image-g_mp_13_2]]
+.Рисунок {counter:figure-number}. Пиктограммы статуса после прохождения автоматической проверки
+image::g_mp_13.png[{image-size1}, align="center"]
+endif::id_image-g_mp_13_2[]
+
+// [[id_image-g_mp_13]]
+// .Рисунок {counter:figure-number}. Пиктограммы статуса после прохождения автоматической проверки
+// image::g_mp_13.png[{image-size1}, align="center"]

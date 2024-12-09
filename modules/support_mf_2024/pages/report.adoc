@@ -1,0 +1,76 @@
+include::common/__period.adoc[]
+:figure-caption!:
+:table-caption!:
+:imagesdir: ../images
+:doctype: book
+// macro - можно вставлять toc::[] в тексте документа где угодно, другое значение - только вначале pdf появляется пред титульным листом
+:toc: macro
+:!chapter-signifier:
+:sectnumlevels: 5
+:sectnums!:
+:pagenums:
+:docinfo: shared
+// :stylesdir: common/css
+// // // :copycss: common/css/
+// :stylesheet: site.css
+// // // :docinfodir: common/meta/
+:toc-title:
+:name1_dokument: ОТЧЕТ 
+:name2_dokument: о результатах выполнения работ по сопровождению подсистем (компонентов, модулей) государственной интегрированной информационной системы управления общественными финансами «Электронный бюджет», а также автоматизированной информационной системы «Финансы» в части модуля организации предоставления в электронном виде мер государственной финансовой поддержки юридическим лицам, индивидуальным предпринимателям, а также физическим лицам - производителям товаров, работ, услуг Министерства финансов Российской Федерации в 2024 году 
+
+:name3_dokument: Договор № {dogovor} ({step} этап)
+:version: Версия {ver}
+
+<<<<
+    
+include::titul.adoc[]
+
+<<<<
+:toc-title: Содержание
+
+toc::[]
+
+<<<<
+// :sectnums:
+include::intro_1.adoc[]
+
+<<<<
+:sectnums:
+
+include::3_1_sect.adoc[]
+
+<<<<
+include::3_2_sect.adoc[]
+
+<<<<
+include::3_3_sect.adoc[]
+
+<<<<
+include::3_4_sect.adoc[]
+
+<<<<
+include::3_6_sect.adoc[]
+
+<<<<
+include::3_8_sect.adoc[]
+
+<<<<
+include::4_sect.adoc[]
+
+<<<<
+include::list_append.adoc[]
+
+
+:sectnums!:
+
+[.landscape]
+<<<<
+include::append_1.adoc[]
+
+[.portrait]
+<<<<
+include::append_2.adoc[]
+
+<<<<
+include::common/List-of-approval.adoc[]
+

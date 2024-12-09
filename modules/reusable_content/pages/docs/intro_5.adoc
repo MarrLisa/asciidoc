@@ -1,0 +1,46 @@
+include::master_text.adoc[]
+:table-caption!: 
+:figure-caption!:
+:doctype: book
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:table-caption!: 
+:docinfo: shared
+
+//Для Валидатора
+// используется в РП 5, РП 6, РП 19
+
+== Перечень терминов и сокращений
+
+Перечень сокращений, терминов и определений представлен в <<id_table_l_term_1, Таблице {counter:table-number}>>.
+
+[[id_table_l_term_1]]
+.Таблица {counter:table-number}. Перечень терминов и сокращений
+ifndef::cz[]
+include::../tables/t_l_term_1.adoc[]
+endif::[]
+ifdef::cz[]
+include::../tables/t_l_term_1_cz.adoc[]
+endif::[]
+
+<<<<
+:table-caption!: 
+
+== Введение
+
+{nast_doc} роли «{role_val}», {used} рассмотрению поступивших заявок на предмет соответствия требованиям, предъявляемым к участникам отбора.
+
+ifdef::manual5[{one_stage}.]
+ifdef::manual6[{two_stage}.]
+ifdef::manual19[Применяется для отборов исполнителей услуг по социальному заказу путем проведения конкурса.]
+
+{func} <<id_table_5, Таблице {counter:table-number}>>.
+
+[[id_table_5]]
+.Таблица {counter:table-number}. Функции и полномочия
+ifndef::cz[]
+include::../tables/t_intro_5.adoc[]
+endif::[]
+ifdef::cz[]
+include::../tables/t_intro_5_cz.adoc[]
+endif::[]

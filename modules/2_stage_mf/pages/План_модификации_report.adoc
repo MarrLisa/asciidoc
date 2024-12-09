@@ -1,0 +1,163 @@
+include::common/contract.adoc[]
+:docinfo: shared
+:!chapter-signifier:
+:!section-refsig:
+:table-caption!: 
+:section-refsig: разделе
+:toc: macro
+:toc-title: Содержание 
+:name1_dokument: План проведения работ по внесению изменений в прикладное программное обеспечение
+:sectnumlevels: 7
+// Кол-во страниц соответствует пдф и версия
+:version: 1
+:page_all: 22
+:code: ТЗ-03
+:toclevels: 4
+:ramka: 2
+:plan:
+
+include::common_rms/include_rms.adoc[]
+
+// Обнулить plan что бы в Общем чтз таблицах машинных носителей и сопровод листе документ печатался без последней рмс
+:plan: 
+
+[.landscape]
+<<<<
+
+include::tables/titul_doc.adoc[tag=titul_start_utv]
+
+[.my-bold-title]
+{name1_dokument}
+
+{nbsp}
+
+:!t_row:
+
+[cols="1,3,5,3,3,4,3,3", options="header"]
+|===
+^| № п/п  ^| Основание выполнения работ ^| Наименование работ    ^| Дата начала работ ^| Дата окончания работ (срок исполнения) ^| Ответственный сотрудник ^| Плановый результат работ     ^| Примечание
+8+| Государственная интегрированная информационная система управления общественными финансами «Электронный бюджет»
+8+| Подсистема управления расходами
+8+| Модуль организации предоставления в электронном виде мер государственной финансовой поддержки юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг
+8+|  Работы по внесению изменений в ППО (адаптация) 
+// -----------1
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_1}    
+| [.table-style-left]#{ft_1}# 
+^| [.table-style-center]#{data_11}#  
+^| [.table-style-center]#{data_12}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01. + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------2
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_2}   
+| [.table-style-center]#{ft_2}# 
+^| [.table-style-center]#{data_21}#  
+^| [.table-style-center]#{data_22}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------3
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_3}   
+| [.table-style-center]#{ft_3}# 
+^| [.table-style-center]#{data_31}#  
+^| [.table-style-center]#{data_32}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------4
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_4}   
+| [.table-style-center]#{ft_4}# 
+^| [.table-style-center]#{data_41}#  
+^| [.table-style-center]#{data_42}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------5
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_5}   
+| [.table-style-center]#{ft_5}# 
+^| [.table-style-center]#{data_51}#  
+| [.table-style-center]#{data_52}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------6
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_6}   
+| [.table-style-center]#{ft_6}# 
+^| [.table-style-center]#{data_61}#  
+^| [.table-style-center]#{data_62}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------7
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_7}   
+| [.table-style-center]#{ft_7}# 
+^| [.table-style-center]#{data_71}#  
+^| [.table-style-center]#{data_72}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------8
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_8}   
+| [.table-style-center]#{ft_8}# 
+^| [.table-style-center]#{data_81}#  
+^| [.table-style-center]#{data_82}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------9
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_9}   
+| [.table-style-center]#{ft_9}# 
+^| [.table-style-center]#{data_91}#  
+^| [.table-style-center]#{data_92}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------10
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_10}   
+| [.table-style-center]#{ft_10}# 
+^| [.table-style-center]#{data_101}#  
+^| [.table-style-center]#{data_102}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+// -----------11
+^| [.table-style-center]#{counter:t_row}#.
+| {plan_11}   
+| [.table-style-center]#{ft_11}# 
+^| [.table-style-center]#{data_111}#  
+^| [.table-style-center]#{data_112}#                              
+| {responsible}        
+| 1. Дистрибутив 0026.01.01.01; + 
+  2. Комплекты документации 0026.01.01.01.          
+|
+
+|===
+
+:!t_row:
+
+
+{nbsp}
+
+include::tables/titul_report.adoc[tag=titul_start_utv2]
+
+:rms: 0

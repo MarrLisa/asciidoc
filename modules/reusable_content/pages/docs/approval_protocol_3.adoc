@@ -1,0 +1,28 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Для проверки отображения под каждую из ролей
+// :pr_opening:
+// :pr_2:
+// :pr_3:
+
+// общая часть после согласования
+// Содержится в файлах protocol_opening, protocol_review, protocol_summary, protocol_summary_cz
+
+=== Итоги согласования
+
+На Портал возвращается документ из Подсистемы только в случае присвоения ему статуса «Утверждено» или «Отозвано».
+
+По итогам согласования и утверждения протокол на Портале переходит в один из двух статусов:
+
+* Если в Подсистеме документ получил итоговый статус «Утверждено», то на Портал он поступит в статусе {st_approved}.
+* Если в Подсистеме документ получил итоговый статус «Отозвано», то на Портал он поступит в статусе {st_rejected}.

@@ -1,0 +1,120 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Подписание заявки с укэп
+
+// Описание модального окна «Направление документа на согласование»
+// Используется в файлах: approval_1.adoc, approval_cz.adoc, delete_otb.adoc, protocol_opening.adoc, protocol_review.adoc, protocol_summary.adoc,  protocol_summary_cz.adoc, sign_ap_1.adoc, sign_ap_accr_1.adoc, sign_exp_1.adoc, withdraw_application.adoc
+include::direction_doc.adoc[]
+
+ifdef::g_faa_2[]
+{sing_doc}, как на <<id_image-g_faa_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_faa_2]]
+.Рисунок {counter:figure-number}. Модальное окно «Направление документа на согласование»
+image::g_faa_2.png[{image-size2}, align="center"]
+endif::g_faa_2[]
+
+ifndef::g_faa_2[]
+:g_faa_2:
+{sing_doc}, как на <<id_image-g_faa_2.1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_faa_2.1]]
+.Рисунок {counter:figure-number}. Модальное окно «Документ для подписи»
+image::g_faa_2.png[{image-size2}, align="center"]
+endif::g_faa_2[]
+
+ifdef::g_faa_3[]
+:g_faa_3.1:
+Далее система автоматически подберет актуальный сертификат, и в его карточке необходимо нажать кнопку «Создать подпись», как на <<id_image-g_fa_3, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_faa_3]]
+.Рисунок {counter:figure-number}. Окно «Выберите сертификат»
+image::g_faa_3.png[{image-size2}, align="center"]
+endif::[]
+
+ifndef::g_faa_3[]
+:g_faa_3:
+Далее система автоматически подберет актуальный сертификат, и в его карточке необходимо нажать кнопку «Создать подпись», как на <<id_image-g_faa_3.1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_faa_3.1]]
+.Рисунок {counter:figure-number}. Окно «Выберите сертификат»
+image::g_faa_3.png[{image-size2}, align="center"]
+endif::[]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}warning.png[16,16] |
+Сертификат ключа подписи должен быть предварительно установлен средствами «КриптоПро». 
+В разделе «Инструкции» Портала размещено Руководство пользователя по установке КриптоПро CSP и сертификата электронной подписи для последующего подписания заявки для участия в отборе.
+|===
+====
+
+Происходит проверка данных авторизованного пользователя и данных из сертификата на признак организации и ФИО. 
+Если проверка пройдена успешно, проект заявки переходит в статус {submitted}.
+
+ifdef::g_faa_4[]
+:g_fa_4.1:
+На странице секции {project_apply} отображается строка с подписанным документом, как на <<id_image-g_fa_4, Рисунке {counter:figure-number}>>. 
+
+[[id_image-g_faa_4]]
+.Рисунок {counter:figure-number}. Секция {project_apply} после подписания
+image::g_faa_4.png[{image-size2}, align="center"]
+endif::[]
+
+ifndef::g_faa_4[]
+:g_faa_4:
+На странице секции {project_apply} отображается строка с подписанным документом, как на <<id_image-g_fa_4.1, Рисунке {counter:figure-number}>>. 
+
+[[id_image-g_faa_4.1]]
+.Рисунок {counter:figure-number}. Секция {project_apply} после подписания
+image::g_faa_4.png[{image-size2}, align="center"]
+endif::[]
+
+ifdef::g_faa_5[]
+:g_faa_5.1:
+По нажатию можно скачать печатную форму с отображением информации: «Документ подписан электронной подписью», Номер сертификата, Владелец, Действителен: с дд.мм.гггг по дд.мм.гггг, как на <<id_image-g_faa_5, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_faa_5]]
+.Рисунок {counter:figure-number}. Печатная форма заявки с отображением подписи
+image::g_faa_5.png[{image-size2}, align="center"]
+endif::[]
+
+ifndef::g_faa_5[]
+:g_faa_5:
+По нажатию можно скачать печатную форму с отображением информации: «Документ подписан электронной подписью», Номер сертификата, Владелец, Действителен: с дд.мм.гггг по дд.мм.гггг, как на <<id_image-g_fa_5.1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_fa_5.1]]
+.Рисунок {counter:figure-number}. Печатная форма заявки с отображением подписи
+image::g_faa_5.png[{image-size2}, align="center"]
+endif::[]
+
+ifdef::g_fa_6[]
+:g_faa_6.1:
+Если данные не совпадают, отобразится модальное окно с указанием на ошибку, как на <<id_image-g_faa_6, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_fa_6]]
+.Рисунок {counter:figure-number}. Окно «Ошибка проверки подписи»
+image::g_fa_6.png[{image-size2}, align="center"]
+endif::[]
+
+ifndef::g_fa_6[]
+:g_fa_6:
+Если данные не совпадают, отобразится модальное окно с указанием на ошибку, как на <<id_image-g_fa_6.1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_fa_6.1]]
+.Рисунок {counter:figure-number}. Окно «Ошибка проверки подписи»
+image::g_fa_6.png[{image-size2}, align="center"]
+endif::[]
+
+Необходимо проверить подпись на соответствие и повторить шаги заново.

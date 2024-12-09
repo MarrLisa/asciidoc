@@ -1,0 +1,10 @@
+include::common/__period.adoc[]
+
+[[append_2]]
+=== Приложение 2 
+
+[.my-bold-title]
+Ключевые показатели эффективности работы СТП +
+{nbsp} +
+
+include::tables/t_sla.adoc[]

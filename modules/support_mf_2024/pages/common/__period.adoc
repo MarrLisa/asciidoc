@@ -1,0 +1,37 @@
+:ko: «
+:ke: »
+:year: 2024
+:dogovor: № ЕИ_26_0001615_2024 от 29.03.2024 года
+:company: {ko}Ки Партнер ИТ{ke}
+:step: 2
+:ver: 1
+:period: с 01 апреля по 30 июня {year} года
+:period_number: с 01.04.2024 по 30.06.2024
+:text-futer-kolontit: 
+:mesto-sostavleniya: Москва
+:dolsnost: Директор
+:dolsnost_isp: Руководитель проекта
+:obchestvo: Общества с ограниченной ответственностью {company}
+:iof: Н.В. Корецкая
+:fio: Корецкая Н.В.
+:tel: +7(977)9097133
+:str-data: _____
+:str-podpis: _________________
+:str-month: _________________
+:list_count_report: 18
+:prefix_count_list: -ти 
+:word_count: листах
+
+//дата и номер поступления Заявки ПЗ № 1
+:number_applic_1: № 3551537
+:data_applic_1_stsrt: 29.04.2024
+:data_applic_1_end: 29.06.2024
+//дата и номер поступления Заявки ПЗ № 2
+:number_applic_2: № 22222222
+:data_applic_2_stsrt: 29.03.2024
+:data_applic_2_end: 29.03.2024
+//дата и номер поступления Заявки ПЗ № n
+
+
+
+:foter-podpis: Отчет о результатах выполненных работ за {step} этап по Договору № {dogovor} года

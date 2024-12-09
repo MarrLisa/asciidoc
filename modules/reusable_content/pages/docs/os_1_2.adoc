@@ -1,0 +1,64 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+//«Направления мер поддержки» в настройке отбора
+// используется в os_1_1
+Для перехода в раздел {support_directions} необходимо на странице {setting_otb} нажать на пункт {support_directions} (1) в боковом меню или в конце блока {general_setting} нажать кнопку {support_directions} (2), как на <<id_image-g_os_1_2_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_os_1_2_1]]
+.Рисунок {counter:figure-number}. Переход в раздел {support_directions}
+image::g_os_1_2_1.png[{image-size}, align="center"]
+
+{save_auto_check}.
+
+Если в рамках отбора подразумевается поддержка нескольких видов деятельности (проектов, направлений, объектов) и, соответственно, определение победителей в их разрезе, то в данном разделе необходимо указать весь их перечень, чтобы в дальнейшем разграничить получателей субсидии.
+
+В разделе {support_directions} можно задать названия направлениям, для этого необходимо нажать кнопку «+ Направление», откроется окно «Создание направления», как на <<id_image-g_os_1_2_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_os_1_2_2]]
+.Рисунок {counter:figure-number}. Окно «Создание направления»
+image::g_os_1_2_2.png[{image-size1}, align="center"]
+
+В окне необходимо заполнить поле «Название» и «Характеристики» – заполняются вручную. 
+{but_create}.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] |
+Направления можно использовать, если в рамках одного отбора предполагается определение победителей в разрезе направлений (например, одна субсидия на обслуживание космодромов предполагает определение победителей для выделения средств отдельно на обслуживание космодрома Байконур и отдельно на обслуживание космодрома Восточный).
+|===
+====
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |Если была создано направление, то автоматически в шаблоне заявки в секции {project_info} появится обязательное поле {support_directions}, как на <<id_image-g_os_1_2_3, Рисунке {counter:figure-number}>>.
+|=== 
+====
+
+[[id_image-g_os_1_2_3]]
+.Рисунок {counter:figure-number}. Поле {support_directions} в шаблоне заявки в секции {project_info}, если были добавлены направления
+image::g_os_1_2_3.png[{image-size1}, align="center"]
+
+Все созданные направления можно удалять и редактировать – функциональные кнопки–иконки появляются при наведении курсора мыши на строку категории, как на <<id_image-g_os_1_2_4, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_os_1_2_4]]
+.Рисунок {counter:figure-number}. Функциональные кнопки–иконки
+image::g_os_1_2_4.png[{image-size1}, align="center"]
+
+Если в отборе не предусмотрены направления, то раздел не заполняется, его можно пропустить.
+
+// Стандартные слова, которые используются в окончании действий, где требуется сохранение на страницах редактирования субсидий/отбора и подобного
+// Используется в файлах: se_1.adoc, se_2.adoc, os_1_1.adoc, os_1_2.adoc, os_1_3_1.adoc, os_1_3_3.adoc, os_2.adoc, os_cz_2.adoc
+include::save_edit.adoc[]

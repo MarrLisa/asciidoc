@@ -1,0 +1,35 @@
+org.asciidoctor
+    asciidoctorj
+    1.5.5
+
+
+    org.asciidoctor
+    asciidoctorj-pdf
+    1.5.0-alpha.15
+
+
+
+
+    org.asciidoctor
+    asciidoctor-maven-plugin
+    1.5.5
+    
+        
+            org.asciidoctor
+            asciidoctorj-pdf
+            1.5.0-alpha.15
+        
+
+         output-html
+            generate-resources
+            
+                process-asciidoc
+
+
+
+
+                src/main/doc
+        target/docs
+        pdf
+
+        

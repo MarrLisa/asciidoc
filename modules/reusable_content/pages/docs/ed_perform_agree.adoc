@@ -1,0 +1,21 @@
+:figure-caption!:
+:table-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:image-default-align: center
+:doctype: book
+:sectnums:
+:xrefstyle: full
+:section-refsig: разделе
+include::master_text.adoc[]
+:docinfo: shared
+
+== Исполнители
+
+:sectnums: 
+:num: {counter:table-number}
+.Таблица {counter:table-number}. 
+include::../tables/t_ed_perform_agree.adoc[]

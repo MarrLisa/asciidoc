@@ -1,0 +1,97 @@
+[cols="2,2,3,3,2", options="header"]
+|===
+^| Определение                                                          ^| Таблица                     ^| Столбец          ^| Тип Данных               ^| Обязательность
+.11+.^| Содержит информацию о заявках                                        .11+.^| Application                 | Id               | uuid                     | YES    
+                             | StartDate        | timestamp with time zone | NO     
+                             | EndDate          | timestamp with time zone | NO     
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | DeletedDate      | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | DeletedBy        | uuid                     | NO     
+                             | Number           | character varying        | NO     
+                             | Title            | character varying        | NO     
+.10+.^| Материализованное представление для быстрого доступа к данным заявки .10+.^| ApplicationMaterializedView | Id               | uuid                     | YES    
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | DeletedDate      | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | DeletedBy        | uuid                     | NO     
+                             | ObjectId         | uuid                     | YES    
+                             | ValueId          | uuid                     | YES    
+                             | Fields           | jsonb                    | NO     
+.11+.^| Хранит значения полей заявки в формате JSON                          .11+.^| ApplicationValue            | Id               | uuid                     | YES    
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | DeletedDate      | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | DeletedBy        | uuid                     | NO     
+                             | TemplateSysName  | text                     | YES    
+                             | ObjectId         | uuid                     | YES    
+                             | Value            | jsonb                    | NO     
+                             | DraftValue       | jsonb                    | NO     
+.13+.^| Описывает структуру формы для заполнения заявки                      .13+.^| FormTemplate                | Id               | uuid                     | YES    
+                             | SysName          | character varying        | YES    
+                             | FormTypeId       | integer                  | YES    
+                             | Name             | character varying        | YES    
+                             | Sections         | jsonb                    | NO     
+                             | PrintSettings    | jsonb                    | NO     
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | DeletedDate      | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | DeletedBy        | uuid                     | NO     
+                             | Status           | integer                  | YES    
+.11+.^| Классифицирует формы по типу                                         .11+.^| FormType                    | Id               | integer                  | YES    
+                             | Name             | character varying        | NO     
+                             | SysName          | character varying        | YES    
+                             | ObjectTypeId     | character varying        | YES    
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | DeletedDate      | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | DeletedBy        | uuid                     | NO     
+                             | ComponentGroups  | ARRAY                    | NO     
+.10+.^| Определяет тип объекта, к которому относится заявка                  .10+.^| ObjectType                  | Id               | character varying        | YES    
+                             | FullName         | text                     | YES    
+                             | Name             | text                     | NO     
+                             | ParentId         | character varying        | NO     
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | DeletedDate      | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | DeletedBy        | uuid                     | NO     
+.11+.^| Описывает свойства, которые могут быть у объекта определенного типа  .11+.^| ObjectTypeProperty          | Id               | integer                  | YES    
+                             | SysName          | text                     | YES    
+                             | Name             | text                     | NO     
+                             | ObjectTypeId     | character varying        | NO     
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | DeletedDate      | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | DeletedBy        | uuid                     | NO     
+                             | Type             | integer                  | YES    
+.2+.^| История миграции баз данных Entity Framework                         .2+.^| __EFMigrationsHistory       | MigrationId      | character varying        | YES    
+                             | ProductVersion   | character varying        | YES    
+.14+.^| Интеграционные события базы данных                                   .14+.^| __IntegrationEvents         | Id               | uuid                     | YES    
+                             | CreatedDate      | timestamp with time zone | YES    
+                             | ModifiedDate     | timestamp with time zone | NO     
+                             | CreatedBy        | uuid                     | NO     
+                             | ModifiedBy       | uuid                     | NO     
+                             | SourceId         | uuid                     | NO     
+                             | EventBody        | text                     | NO     
+                             | EventName        | text                     | NO     
+                             | RetryCount       | integer                  | YES    
+                             | ErrorMessage     | text                     | NO     
+                             | Status           | integer                  | YES    
+                             | LastErrorLockTry | timestamp with time zone | NO     
+                             | LastErrorTry     | timestamp with time zone | NO     
+                             | Discriminator    | text                     | YES    
+|===

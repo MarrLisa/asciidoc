@@ -1,0 +1,20 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+//Из РП про добавление экспертов РП 7
+
+Возможные статусы эксперта:
+
+* {st_exp_ready} — эксперт успешно добавлен и готов к проведению экспертизы image:{iconsdir}status_green.png[width=16,height=16].
+* {st_exp_not_register} — человек с указанным СНИЛС не проходил авторизацию на Портале (данный статус не является ошибкой, это предупреждающий статус: после первой авторизации на Портале, пользователю с этими данными автоматически будет присвоена роль {role_exp}) image:{iconsdir}status_yellow.png[width=16,height=16].
+* {st_exp_added} — эксперт с указанным СНИЛС ранее уже был успешно добавлен в список экспертов (не является ошибкой, информационный статус) image:{iconsdir}status_green.png[width=16,height=16].
+* {st_exp_mistake} — при введении данных СНИЛС была допущена ошибка (необходимо заново внести корректные данные) image:{iconsdir}status_red.png[width=16,height=16].

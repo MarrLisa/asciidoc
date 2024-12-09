@@ -1,0 +1,21 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// общая часть после согласования
+// Содержится в файлах protocol_opening, protocol_review, protocol_summary, protocol_summary_cz
+
+После нажатия на иконку image:{iconsdir}new.png[width=16,height=16] открывается окно с текстом комментария о причинах отклонения. 
+
+Согласно тексту комментария необходимо внести корректировки и сформировать новую версию протокола — нажать кнопку «Сформировать» и в модальном окне «Направление документа на согласование» нажать кнопку «Отправить». 
+
+После этого предыдущая версия протокола переходит «в архив», а для скачивания доступна новая версия протокола со статусом {st_in_review}. Новый протокол отправляется на согласование и утверждение аналогично указанному выше.
+

@@ -1,0 +1,2 @@
+:styles: shared
+include::styles.html[]

@@ -1,0 +1,18 @@
+= Document Title
+:doctype: book
+
+== Chapter A
+
+Content.
+
+== Chapter B
+
+Refer to <<_chapter_a>> on page pageref:_chapter_a[].
+
+== Chapter A
+
+Content.
+
+== Chapter B
+
+Refer to <<_chapter_a>> on page pageref:_chapter_a[].

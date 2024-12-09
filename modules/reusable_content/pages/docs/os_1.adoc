@@ -1,0 +1,29 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+// «Общие настройки» «Направления мер поддержки» и «Раздел 1. Прием заявок» в настройке отбора
+// используется в 2 рп, 17 рп
+
+=== Раздел {general_setting}
+
+include::os_1_1.adoc[]
+
+ifdef::role2[]
+=== Раздел {support_directions}
+
+include::os_1_2.adoc[]
+endif::[]
+
+=== {application_section}
+
+include::os_1_3.adoc[]

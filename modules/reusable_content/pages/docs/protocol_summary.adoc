@@ -1,0 +1,284 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:pr_3: Протокол подведения итогов
+
+// Описание протокола подведения итогов
+// используется в 10 рп, 11 рп
+
+=== {protocol_summary}
+
+==== Формирование проекта протокола подведения итогов
+
+Формирование протокола подведения итогов отбора 
+ifdef::manual10[при проведении одноэтапного отбора]
+ifdef::manual11[при проведении двухэтапного отбора]
+доступно при наступлении событий:
+
+ifdef::manual10[]
+* все заявки, поданные на отбор, в статусе {submitted} прошли валидирование (рассмотрение заявок на предмет соответствия требованиям, установленным правилами предоставления субсидий) и им назначены отложенные статусы ({supported}/{notsupported}), как на <<id_image-g_ps_1, Рисунке {counter:figure-number}>>;
+endif::[]
+ifdef::manual11[]
+* все заявки, поданные на отбор, в статусе {approved} прошли экспертную оценку и им назначены отложенные статусы ({supported}/{notsupported}), как на <<id_image-g_ps_1.1, Рисунке {counter:figure-number}>>;
+endif::[]
+* по всем заявкам с отложенным статусом {supported} завершено распределение средств.
+
+ifdef::manual10[]
+[[id_image-g_ps_1]]
+.Рисунок {counter:figure-number}. Колонка «Отложенный статус» после завершения валидации
+image::g_ps_1.png[{image-size}, align="center"]
+endif::[]
+ifdef::manual11[]
+[[id_image-g_ps_1.1]]
+.Рисунок {counter:figure-number}. Колонка «Отложенный статус» после завершения экспертизы
+image::g_ps_1.1.png[{image-size}, align="center"]
+endif::[]
+
+В случае наступления обоих событий в разделе {list_applications}, при выборе отбора в блоке «Протоколы» отобразится кнопка «Сформировать протокол подведения итогов».
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}info.png[16,16] |
+ifdef::manual10[До формирования протокола подведения итогов, должен быть сформирован и утвержден {protocol_opening}.]
+ifdef::manual11[До формирования протокола подведения итогов, должен быть сформирован и утвержден {protocol_review}.]
+|===
+====
+
+Для формирования протокола необходимо в разделе {list_applications} развернуть скрытый блок «Протоколы».
+
+В появившемся поле из справочника отборов необходимо выбрать номер отбора, для которого будет формироваться протокол, для удобства можно ввести часть шифра отбора для фильтрации.
+
+После выбора отбора в блоке «Протоколы» справа от информации 
+ifdef::manual10[по протоколу вскрытия заявок]
+ifdef::manual11[по протоколу рассмотрения заявок]
+ifdef::manual10[]
+будет кнопка «Сформировать протокол подведения итогов», как на <<id_image-g_ps_2, Рисунке {counter:figure-number}>>.
+[[id_image-g_ps_2]]
+.Рисунок {counter:figure-number}. Кнопка «Сформировать протокол подведения итогов»
+image::g_ps_2.png[{image-size2}, align="center"]
+endif::[]
+ifdef::manual11[]
+будет кнопка «Сформировать протокол подведения итогов», как на <<id_image-g_ps_2.1, Рисунке {counter:figure-number}>>.
+[[id_image-g_ps_2.1]]
+.Рисунок {counter:figure-number}. Кнопка «Сформировать протокол подведения итогов»
+image::g_ps_2.1.png[{image-size2}, align="center"]
+endif::[]
+
+В зависимости от выбранного отбора в блоке протоколов в реестре {list_applications} автоматически происходит фильтрация заявок.
+
+Для формирования протокола подведения итогов необходимо нажать кнопку «Сформировать протокол подведения итогов».
+
+// Описание модального окна «Направление документа на согласование»
+// Используется в файлах: approval_1.adoc, approval_cz.adoc, delete_otb.adoc, protocol_opening.adoc, protocol_review.adoc, protocol_summary.adoc,  protocol_summary_cz.adoc, sign_ap_1.adoc, sign_ap_accr_1.adoc, sign_exp_1.adoc, withdraw_application.adoc
+include::direction_doc.adoc[]
+, как на <<id_image-g_ps_3, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_ps_3]]
+.Рисунок {counter:figure-number}. Модальное окно «Направление документа на согласование»
+image::g_ps_3.png[{image-size1}, align="center"]
+
+После нажатия кнопки «Отправить» документ отправляется на согласование. 
+Протокол переходит в статус {st_in_review}.
+
+На странице раздела {list_applications} отображается сформированный Протокол, который можно скачать нажатием на поле, а также его текущий статус.
+
+Протокол содержит строки и приложения: 
+
+ifdef::manual10[]
+* {subsidy_name}.
+* {organizer}.
+* {budget_manager}.
+* {application_deadline}.
+* {review_deadline}.
+* {application_count}. 
+В числе поданных заявок выводится число, аналогичное числу поданных заявок из протокола вскрытия.
+* {application_reviewed}.
+* {application_withdrawn_1}.
+
+Далее идет информационный текст:
+
+Перечень участников отбора, заявки которых были рассмотрены и отклонены с указанием причин отклонения, приведен в Приложении № 1 к настоящему протоколу.
+Сведения о победителях отбора (получателях субсидии (гранта в форме субсидии)) и размер предоставляемых средств, приведены в Приложении № 2 к настоящему протоколу.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}warning.png[16,16] |
+Если победители не были выбраны, то отображается следующая информация: Победители, соответствующие предъявляемым требованиям, не определены. Отбор признан несостоявшимся.
+|===
+====
+
+В Приложении № 1 выводятся все заявки, которые имеют отложенный статус {notsupported}, приложение содержит таблицу «Перечень участников отбора, заявки которых были рассмотрены и отклонены с указанием причин отклонения» с колонками:
+
+* {rejected_application_number}.
+* {application_date}.
+* {applicant_info}.
+* {rejected_reason}.
+* {rejected_comment}.
+
+Приложение №2 выводятся все заявки, которые имеют отложенный статус: {supported}, приложение содержит таблицу «Сведения о победителях отбора (получателях субсидии (гранта в форме субсидии)) и размер предоставляемых средств» с колонками:
+
+* {winner_application_number}.
+* {application_date}.
+* {applicant_info}.
+* {winner_funding_amount}.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}info.png[16,16] |
+Если в отборе есть больше одной категории, то заявки выводятся во всех приложениях протокола подведения итогов в разрезе по ним. Сортировка внутри каждой категории — по дате подачи.
+|===
+====
+
+endif::[]
+
+ifdef::manual11[]
+
+* {subsidy_name}.
+* {organizer}.
+* {budget_manager}.
+* {application_deadline}.
+* {review_deadline}.
+* {application_count_exp}.
+* {application_exp_estimate}.
+* {application_withdrawn_exp}.
+
+Далее идет информационный текст:
+
+{application_estimate}.
+Сведения о победителях отбора (получателях субсидии (гранта в форме субсидии)) и размер предоставляемых средств, приведены в Приложении № 2 к настоящему протоколу.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}warning.png[16,16] |
+Если победители не были выбраны, то отображается следующая информация: Победители, соответствующие предъявляемым требованиям, не определены. Отбор признан несостоявшимся.
+|===
+====
+
+{protocol_app_exp_1}.
+Приложение № 1 содержит таблицу «Итоговые результаты оценки заявок на участие в отборе» с колонками:
+
+* {rating}.
+* {reviewed_application_number}.
+* {application_date}.
+* {applicant_info}.
+* {application_estimate_exp}. 
+
+Если в отборе была включена функция изменения баллов, то Приложение № 1 также будет содержать таблицу «Информация об изменении результатов экспертизы» с колонками:
+
+* {rating}.
+* {reviewed_application_number}.
+* {estimate_expert}.
+* {estimate_expert_change}.
+* {estimate_change_reason}.
+
+В приложении также содержится таблица «Оценка заявок по критериям» с колонками:
+
+* {rating}.
+* {reviewed_application_number}.
+* {crit_application}.
+
+Под таблицей выводится список критериев с расшифровкой: Критерий 1 - название критерия 1 установленного при настройках отбора.
+
+Приложение №2 выводятся все заявки, которые имеют отложенный статус: {supported}, приложение содержит таблицу «Сведения о победителях отбора (получателях субсидии (гранта в форме субсидии)) и размер предоставляемых средств» с колонками:
+
+* {winner_application_number}.
+* {application_date}.
+* {applicant_info}.
+* {winner_funding_amount}.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}info.png[16,16] |
+Если в отборе есть больше одной категории, то заявки выводятся во всех приложениях протокола подведения итогов в разрезе по ним. Сортировка внутри каждой категории — по дате подачи.
+|===
+====
+endif::[]
+
+=== Согласование и утверждение
+
+{but_giis}.
+
+Согласование и утверждение Протокола подведения итогов происходит в системе «Электронный бюджет» в следующих разделах:
+
+* Федеральные субсидии и операторские – _«Реестр субсидий ЮЛ, ИП, ФЛ» / «Реестр согласования субсидий ЮЛ, ИП, ФЛ (федеральные)»_.
+* Региональные и муниципальные (также операторские) субсидии – _«Реестр субсидий ЮЛ, ИП, ФЛ» / «Реестр согласования субсидий ЮЛ, ИП, ФЛ (региональные и муниципальные)»_.
+
+include::approval_protocol_3.adoc[]
+
+{com_protocol}, как на <<id_image-g_ps_7, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_ps_7]]
+.Рисунок {counter:figure-number}. Иконка «Комментарий из ГИИС ЭБ»
+image::g_ps_7.png[{image-size1}, align="center"]
+
+include::approval_protocol_4.adoc[]
+
+ifdef::manual10[]
+{approved_protocol}, как на <<id_image-g_ps_8, Рисунке {counter:figure-number}>>:
+
+. последний сформированный протокол, с возможностью скачать (1);
+. статус {st_approved} (2).
+ 
+[[id_image-g_ps_8]]
+.Рисунок {counter:figure-number}. Протокол утвержден
+image::g_ps_8.png[{image-size1}, align="center"]
+endif::[]
+
+ifdef::manual11[]
+{approved_protocol}, как на <<id_image-g_ps_8.1, Рисунке {counter:figure-number}>>:
+
+. последний сформированный протокол, с возможностью скачать (1);
+. статус {st_approved} (2).
+ 
+[[id_image-g_ps_8.1]]
+.Рисунок {counter:figure-number}. Протокол утвержден
+image::g_ps_8.1.png[{image-size1}, align="center"]
+endif::[]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}info.png[16,16] |
+После утверждения протокола подведения итогов в реестре {list_applications} у заявок сменится статус с 
+ifdef::manual10[{submitted}]
+ifdef::manual11[{approved}]
+на статус {supported}/{notsupported} согласно данным из протокола, как на <<id_image-g_ps_4, Рисунке {counter:figure-number}>>.
+|===
+====
+
+ifdef::manual10[]
+[[id_image-g_ps_4]]
+.Рисунок {counter:figure-number}. Колонка статус заявки
+image::g_ps_4.png[{image-size}, align="center"]
+endif::[]
+
+ifdef::manual11[]
+[[id_image-g_ps_4.1]]
+.Рисунок {counter:figure-number}. Колонка статус заявки
+image::g_ps_4.1.png[{image-size}, align="center"]
+endif::[]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}info.png[16,16] |
+После утверждения протокола подведения итогов в реестре {otbory} в строке отбора в колонке «Количество победителей отбора» отобразится количество заявок согласно данным из протокола, как на <<id_image-g_ps_5, Рисунке {counter:figure-number}>>.
+|===
+====
+
+[[id_image-g_ps_5]]
+.Рисунок {counter:figure-number}. Реестр {otbory} колонка «Количество победителей отбора»
+image::g_ps_5.png[{image-size}, align="center"]

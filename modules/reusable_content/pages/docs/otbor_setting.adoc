@@ -1,0 +1,130 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+// Настройка отбора вводная часть, описание страницы "Настройка отбора"
+// Используется для РП2 (суб) РП17 (соцзаказ)
+// Маяк используется в ссылке в файле modification_otb.adoc
+
+[[otbor_setting]]
+=== Настройка отбора
+После нажатия image:{iconsdir}plus.png[width=16,height=16] в реестре {subsidy} формируется новый отбор и открывается страница {setting_otb}. 
+// Для настройки отбора необходимо нажать кнопку «Перейти к настройкам отбора» на странице Объявления об отборе, как на <<id_image-g_os_1, Рисунке {counter:figure-number}>>.
+
+// [[id_image-g_os_1]]
+// .Рисунок {counter:figure-number}. Переход в отбор для настройки из Объявления об отборе
+// ifdef::role2[]
+// image::g_os_1.png[{image-size1}, align="center"]
+// endif::[]
+// ifdef::role2_cz[]
+// image::g_os_cz_1.png[{image-size1}, align="center"]
+// endif::[]
+
+Также на страницу {setting_otb} возможно перейти из реестра 
+ifdef::role2[{otbory}]
+ifdef::role2_cz[{otbory_cz}]
+, для этого необходимо в строке отбора нажать на иконку image:{iconsdir}pen.png[width=16,height=16] в колонке действия, как на <<id_image-g_os_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_os_2]]
+.Рисунок {counter:figure-number}. Переход в отбор для настройки из реестра
+ifdef::role2[]
+image::g_os_2.png[{image-size}, align="center"]
+endif::[]
+ifdef::role2_cz[]
+image::g_os_cz_2.png[{image-size}, align="center"]
+endif::[]
+
+// После нажатия откроется страница {setting_otb}. 
+Страница {setting_otb} содержит следующие элементы, как на <<id_image-g_os_3, Рисунке {counter:figure-number}>>:
+
+. {back_to_list} 
+ifdef::role2[{otbory}]
+ifdef::role2_cz[{otbory_cz}]
+(1).
+. {info_block} отбора (2).
+. {edit_menu} отбора (3).
+. {edit_block} (4).
+
+[[id_image-g_os_3]]
+.Рисунок {counter:figure-number}. Страница {setting_otb}
+ifdef::role2[]
+image::g_os_3.png[{image-size}, align="center"]
+endif::[]
+ifdef::role2_cz[]
+image::g_os_cz_3.png[{image-size}, align="center"]
+endif::[]
+
+Боковое меню состоит из разделов страницы {setting_otb}:
+
+. {general_setting}.
+ifdef::role2[. {support_directions}.]
+. {application_section}:
+.. {application_val};
+.. {application_template};
+.. {application_exp}.
+. {otbor_section}:
+.. {profile_otb_info};
+ifdef::role2[.. {fund_distr};]
+ifdef::role2_cz[.. {fund_services};]
+.. {add_info}. 
+. {other_section_otb}:
+.. {setting_kk}.
+. {doc_section}:
+.. {otbor_doc}.
+
+Информационный блок состоит из:
+
+* «Отбор» – содержит шифр отбора.
+* «Статус» – статус отбора.
+* Поле версии изменений отбора – поле заполняется выбором значения из списка, по умолчанию открывается на последней;
+* «Статус версии» – отображается актуальный статус версии отбора, согласно выбранной версии (виден только если у отбора более одной версии).
+* Кнопка «Предпросмотр» – при нажатии открывается страница предварительного просмотра страницы Объявления об отборе.
+* Кнопки «Согласование»/«Опубликовать»/«Редактировать»/«Сформировать изменения» – появляются динамически в зависимости от статуса и версии отбора.
+* Иконка image:{iconsdir}delete.png[width=16,height=16] – появляется только при условии, если новая версия создана на Портале, после нажатия кнопки «Сформировать изменения». 
+Удаление версии возможно только на статусе {st_draf}, при удалении версия удаляется полностью без перехода в статус {st_archived}.
+* Иконка  image:{iconsdir}more_vertical.png[width=16,height=16] – на статусе отбора {st_published} открывает меню с возможностью приостановить/активировать/отменить отбор, во всех остальных (кроме {st_draf}) позволяет перейти в Подсистему для дальнейших действий.
+* Иконка image:{iconsdir}new.png[width=16,height=16] – появляется, когда в результате согласования объявления об отборе он был отклонен (содержит комментарий).
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] |
+Если есть только одна версия отбора, в информационном блоке не отображаются поле версии и строка «Статус версии», в строке «Статус» при этом выводятся текущие статусы версии вплоть до статуса {st_published}, включая следующие статусы: +
+- {st_draf}; +
+- {st_in_review}; +
+- {st_rejected}; +
+- {st_approved}.
+|===
+====
+
+После статуса {st_published} отбор может переходить в статусы:
+
+* {status_o_3};
+* {status_o_4};
+* {status_o_5};
+* {status_o_6}.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] a|
+Группировка внутри пунктов выбора происходит в соответствии со статусами версии, как на <<id_image-g_os_4, Рисунке {counter:figure-number}>>: +
+
+* не опубликовано — версии в статусах {st_draf}/{st_in_review}/{st_rejected}/{st_approved}; +
+* опубликовано — версии в статусе {st_published}; +
+* {st_archived} — версии в статусе {st_archived}. 
+|===
+====
+
+[[id_image-g_os_4]]
+.Рисунок {counter:figure-number}. Группировки версии
+image::g_os_4.png[{image-size2}, align="center"]

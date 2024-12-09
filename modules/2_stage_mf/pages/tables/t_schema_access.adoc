@@ -1,0 +1,73 @@
+[cols="2,2,2,5,3", options="header"]
+|===
+^| Определение                                                                                                                                        ^| Таблица               ^| Столбец            ^| Тип Данных        ^| Обязательность
+.5+.^| Таблица, определяющая доступ к объектам в древовидной структуре                                                                                    .5+.^| AccessTree            | Id                 | integer           | YES    
+                       | TreeId             | integer           | YES    
+                       | AuthorityId        | integer           | YES    
+                       | IdentityId         | uuid              | YES    
+                       | Type               | integer           | YES    
+.5+.^| Представление, объединяющее информацию о правах доступа (Authority) и количестве связанных с ними разрешений (Permission)                          .5+.^| AuthoritiesView       | Id                 | integer           | NO     
+                       | Name               | character varying | NO     
+                       | SysName            | character varying | NO     
+                       | Description        | character varying | NO     
+                       | PermissionCount    | bigint            | NO     
+.4+.^| Таблица, описывающая права доступа                                                                                                                 .4+.^| Authority             | Id                 | integer           | YES    
+                       | SysName            | character varying | YES    
+                       | Description        | character varying | NO     
+                       | Name               | character varying | NO     
+.3+.^| Право доступа роли. Связывает роли (Role) с правами доступа (Authority).                                                                           .3+.^| AuthorityRole         | Id                 | integer           | YES    
+                       | RoleId             | integer           | YES    
+                       | AuthorityId        | integer           | YES    
+.7+.^| Таблица, определяющая конкретные разрешения                                                                                                        .7+.^| Permission            | Id                 | integer           | YES    
+                       | SysName            | character varying | YES    
+                       | Description        | character varying | NO     
+                       | PermissionType     | text              | YES    
+                       | TreeTypeId         | integer           | NO     
+                       | PermissionGroupId  | integer           | NO     
+                       | Order              | integer           | YES    
+.3+.^| Связывает разрешения (Permission) с правами доступа (Authority                                                                                     .3+.^| PermissionAuthority   | Id                 | integer           | YES    
+                       | PermissionId       | integer           | YES    
+                       | AuthorityId        | integer           | YES    
+.4+.^| Группирует разрешения (Permission)                                                                                                                 .4+.^| PermissionGroup       | Id                 | integer           | YES    
+                       | ParentId           | integer           | NO     
+                       | Name               | character varying | NO     
+                       | Order              | integer           | YES    
+.10+.^| Представление, отображающее разрешения и группы разрешений в древовидной структуре                                                                 .10+.^| PermissionsTreeView   | UniqueId           | text              | NO     
+                       | Id                 | integer           | NO     
+                       | IsGroup            | boolean           | NO     
+                       | Name               | character varying | NO     
+                       | SysName            | character varying | NO     
+                       | Order              | integer           | NO     
+                       | Type               | integer           | NO     
+                       | TreeType           | integer           | NO     
+                       | ParentId           | text              | NO     
+                       | HasItems           | boolean           | NO     
+.4+.^| Таблица, описывающая роли пользователей                                                                                                            .4+.^| Role                  | Id                 | integer           | YES    
+                       | SysName            | character varying | YES    
+                       | Description        | character varying | NO     
+                       | Name               | character varying | NO     
+.5+.^| Представление, объединяющее информацию о ролях (Role) и количестве связанных с ними прав доступа (Authority).                                      .5+.^| RolesView             | Id                 | integer           | NO     
+                       | Name               | character varying | NO     
+                       | SysName            | character varying | NO     
+                       | Description        | character varying | NO     
+                       | AuthorityCount     | bigint            | NO     
+.5+.^| Таблица, представляющая древовидную структуру объектов.                                                                                            .5+.^| Tree                  | Id                 | integer           | YES    
+                       | ObjectId           | uuid              | YES    
+                       | ParentId           | integer           | NO     
+                       | TreeTypeId         | integer           | YES    
+                       | Path               | USER-DEFINED      | YES    
+.3+.^| Таблица, описывающая типы деревьев                                                                                                                 .3+.^| TreeType              | Id                 | integer           | YES    
+                       | SysName            | character varying | YES    
+                       | Description        | character varying | NO     
+.4+.^| Предоставление типа дерева.  Связывает права доступа (AuthorityId) с типами деревьев (TreeTypeId) через набор предоставлений (TreeTypeGrantSetId). .4+.^| TreeTypeGrant         | Id                 | integer           | YES    
+                       | AuthorityId        | integer           | YES    
+                       | TreeTypeId         | integer           | YES    
+                       | TreeTypeGrantSetId | integer           | YES    
+.2+.^| Таблица для группировки предоставлений типов деревьев.                                                                                             .2+.^| TreeTypeGrantSet      | Id                 | integer           | YES    
+                       | SysName            | text              | NO     
+.3+.^| Роль профиля пользователя. Связывает роли (Role) с профилями пользователей (UserProfileId).                                                        .3+.^| UserProfileRole       | Id                 | integer           | YES    
+                       | RoleId             | integer           | YES    
+                       | UserProfileId      | uuid              | YES    
+.2+.^| История миграции баз данных Entity Framework                                                                                                       .2+.^| __EFMigrationsHistory | MigrationId        | character varying | YES    
+                       | ProductVersion     | character varying | YES    
+|===

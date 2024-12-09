@@ -1,0 +1,79 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+//«Раздел 1. Прием заявок»  в настройке отбора
+// используется в os_1
+
+{application_section} содержит подразделы с необходимыми настройками для проведения отбора:
+
+//Разный порядок отображения у Субсидии
+ifdef::role2[]
+. {application_val} – настраивается валидация заявки: даты и режим распределения заявок на валидаторов (валидация – это рассмотрение заявок на предмет соответствия базовым основным требованиям).
+. {application_template} – настраивается шаблон заявки для участников.
+. {application_exp} – настраивается экспертиза заявки.
+endif::[]
+//Разный порядок отображения у СЗ
+ifdef::role2_cz[]
+. {application_template} – настраивается шаблон заявки для участников.
+. {application_val} – настраивается валидация заявки: даты и режим распределения заявок на валидаторов (валидация – это рассмотрение заявок на предмет соответствия базовым основным требованиям).
+. {application_exp} – настраивается экспертиза заявки.
+endif::[]
+
+// Перечисление глав соответственно тоже иной( Субсидия)
+ifdef::role2[]
+[[application_val]]
+==== Подраздел {application_val}
+
+include::os_1_3_1.adoc[]
+
+==== Подраздел {application_template}
+
+include::os_1_3_2.adoc[]
+
+===== Раздел «Общие настройки» шаблона заявки
+
+include::os_1_3_2_1.adoc[]
+
+===== Раздел «Шаблон заявки» настройки шаблона заявки
+
+include::os_1_3_2_2.adoc[]
+
+==== Подраздел {application_exp}
+
+include::os_1_3_3.adoc[]
+endif::[]
+
+// Перечисление глав соответственно тоже иной(СЗ)
+ifdef::role2_cz[]
+
+==== Подраздел {application_template}
+
+include::os_1_3_2.adoc[]
+
+===== Раздел «Общие настройки» шаблона заявки
+
+include::os_1_3_2_1.adoc[]
+
+===== Раздел «Шаблон заявки» настройки шаблона заявки
+
+include::os_1_3_2_2.adoc[]
+
+[[application_val]]
+==== Подраздел {application_val}
+
+include::os_1_3_1.adoc[]
+
+==== Подраздел {application_exp}
+
+include::os_1_3_3.adoc[]
+endif::[]

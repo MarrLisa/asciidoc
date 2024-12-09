@@ -1,0 +1,28 @@
+:ministry: Министерство науки и высшего образования Российской Федерации
+:fullname1: dfgdfdf
+:fullname2: dfsdgfsgs
+:shortname: sdfgsdsgf
+:cathedra1: sdgsdfgsd
+:cathedra2: sdgfsdgfs
+
+:subjectFull: по дисциплине «{subject}»
+:themeFull: Тема: «{theme}»
+
+:madeBy: Выполнил
+:groupFull: студент {group}
+
+:checkedBy: Принял
+
+:city: Москва
+:title: {work} №{worknumber}
+
+:doctype: book
+:reproducible:
+:listing-caption: Листинг
+:figure-caption: Рисунок
+:table-caption: Taблица
+:appendix-caption: Приложение
+:toc-title: Содержание
+:source-highlighter: rouge
+:toclevels: 2
+:imagesdir: ./images

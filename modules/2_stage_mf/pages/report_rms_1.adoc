@@ -1,0 +1,29 @@
+include::common/contract.adoc[]
+include::common_rms/rms_1_common.adoc[]
+:docinfo: shared
+:!chapter-signifier:
+:!section-refsig:
+:table-caption!: 
+:section-refsig: разделе
+:toc: macro
+:toc-title: Содержание 
+
+:name1_dokument: Отчет о выполненной адаптации (модификации) прикладного программного обеспечения 
+:version: 1
+:code: ТЗ
+:sectnumlevels: 7
+:ramka: 0
+
+// Кол-во страниц соответствует пдф 
+:page_all: 9999
+
+// :title-page: — это директива, которая создает отдельную страницу титульного листа для документа.
+
+// вставляем первую половину док
+include::common/rms_report.adoc[tag=start_section]
+
+include::tables/t_application_1.adoc[]
+
+include::tables/t_application_2.adoc[]
+
+include::common/rms_report.adoc[tag=end_section]

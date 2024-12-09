@@ -1,0 +1,107 @@
+[cols="2,2,3,3,2", options="header"]
+|===
+^| Определение                                   ^| Таблица               ^| Столбец             ^| Тип Данных               ^| Обязательность
+.15+.^| Содержит информацию о местоположении,         .15+.^| Address               | Id                  | uuid                     | YES    
+                       | PersonId            | uuid                     | YES    
+                       | Location            | text                     | NO     
+                       | House               | text                     | NO     
+                       | Building            | text                     | NO     
+                       | Frame               | text                     | NO     
+                       | Flat                | text                     | NO     
+                       | CreatedDate         | timestamp with time zone | YES    
+                       | ModifiedDate        | timestamp with time zone | NO     
+                       | DeletedDate         | timestamp with time zone | NO     
+                       | CreatedBy           | uuid                     | NO     
+                       | ModifiedBy          | uuid                     | NO     
+                       | DeletedBy           | uuid                     | NO     
+                       | Version             | bytea                    | NO     
+                       | AddressRaw          | text                     | NO     
+.11+.^| Содержит информацию об организациях           .11+.^| Organization          | Id                  | uuid                     | YES    
+                       | IdentityType        | integer                  | YES    
+                       | Ogrn                | character varying        | YES    
+                       | CreatedDate         | timestamp with time zone | YES    
+                       | ModifiedDate        | timestamp with time zone | NO     
+                       | DeletedDate         | timestamp with time zone | NO     
+                       | CreatedBy           | uuid                     | NO     
+                       | ModifiedBy          | uuid                     | NO     
+                       | DeletedBy           | uuid                     | NO     
+                       | IsLiquidated        | boolean                  | YES    
+                       | PriorityProfileId   | uuid                     | NO     
+.10+.^| Содержит информацию о выписках из ЕГРЮЛ/ЕГРИП .10+.^| OrganizationExtract   | Id                  | uuid                     | YES    
+                       | CreatedDate         | timestamp with time zone | YES    
+                       | ModifiedDate        | timestamp with time zone | NO     
+                       | CreatedBy           | uuid                     | NO     
+                       | ModifiedBy          | uuid                     | NO     
+                       | OrganizationId      | uuid                     | YES    
+                       | ReceivingDate       | timestamp with time zone | YES    
+                       | XmlDocumentId       | uuid                     | YES    
+                       | PdfDocumentId       | uuid                     | YES    
+                       | LastAccessDate      | timestamp with time zone | YES    
+.14+.^| Содержит информацию профиля организации       .14+.^| OrganizationProfile   | Id                  | uuid                     | YES    
+                       | OrganizationId      | uuid                     | YES    
+                       | SourceType          | integer                  | YES    
+                       | Inn                 | character varying        | NO     
+                       | Kpp                 | character varying        | NO     
+                       | FullName            | character varying        | NO     
+                       | ShortName           | character varying        | NO     
+                       | CreatedDate         | timestamp with time zone | YES    
+                       | ModifiedDate        | timestamp with time zone | NO     
+                       | DeletedDate         | timestamp with time zone | NO     
+                       | CreatedBy           | uuid                     | NO     
+                       | ModifiedBy          | uuid                     | NO     
+                       | DeletedBy           | uuid                     | NO     
+                       | PppCode             | text                     | NO     
+.15+.^| Содержит информацию данных паспорта           .15+.^| Passport              | Id                  | uuid                     | YES    
+                       | PersonId            | uuid                     | YES    
+                       | Series              | text                     | NO     
+                       | Number              | text                     | NO     
+                       | IssueDate           | text                     | NO     
+                       | IssueId             | text                     | NO     
+                       | IssuedBy            | text                     | NO     
+                       | Type                | text                     | NO     
+                       | CreatedDate         | timestamp with time zone | YES    
+                       | ModifiedDate        | timestamp with time zone | NO     
+                       | DeletedDate         | timestamp with time zone | NO     
+                       | CreatedBy           | uuid                     | NO     
+                       | ModifiedBy          | uuid                     | NO     
+                       | DeletedBy           | uuid                     | NO     
+                       | Version             | bytea                    | NO     
+.23+.^| Содержит информацию о физических лицах        .23+.^| Person                | Id                  | uuid                     | YES    
+                       | Email               | text                     | NO     
+                       | FirstName           | text                     | NO     
+                       | LastName            | text                     | NO     
+                       | Patronymic          | text                     | NO     
+                       | PhoneNumber         | text                     | NO     
+                       | CreatedDate         | timestamp with time zone | YES    
+                       | ModifiedDate        | timestamp with time zone | NO     
+                       | DeletedDate         | timestamp with time zone | NO     
+                       | CreatedBy           | uuid                     | NO     
+                       | ModifiedBy          | uuid                     | NO     
+                       | DeletedBy           | uuid                     | NO     
+                       | Version             | bytea                    | NO     
+                       | BirthDate           | date                     | NO     
+                       | Gender              | integer                  | YES    
+                       | Inn                 | character varying        | NO     
+                       | NoPatronymic        | boolean                  | YES    
+                       | UserAvatarId        | uuid                     | NO     
+                       | UserId              | uuid                     | YES    
+                       | AcceptPersonalInfo  | boolean                  | YES    
+                       | UserPreviewAvatarId | uuid                     | NO     
+                       | PublicId            | character varying        | YES    
+                       | Snils               | character varying        | NO     
+.13+.^| Содержит информацию профиля пользователя      .13+.^| UserProfile           | Id                  | uuid                     | YES    
+                       | UserId              | uuid                     | YES    
+                       | IdentityType        | integer                  | YES    
+                       | OrganizationId      | uuid                     | NO     
+                       | PersonId            | uuid                     | NO     
+                       | CreatedDate         | timestamp with time zone | YES    
+                       | ModifiedDate        | timestamp with time zone | NO     
+                       | DeletedDate         | timestamp with time zone | NO     
+                       | CreatedBy           | uuid                     | NO     
+                       | ModifiedBy          | uuid                     | NO     
+                       | DeletedBy           | uuid                     | NO     
+                       | Version             | bytea                    | NO     
+                       | ExternalLogin       | character varying        | NO     
+.2+.^| История миграции баз данных Entity Framework  .2+.^| __EFMigrationsHistory | MigrationId         | character varying        | YES    
+                       | ProductVersion      | character varying        | YES    
+|===

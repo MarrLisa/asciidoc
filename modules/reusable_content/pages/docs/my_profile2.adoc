@@ -1,0 +1,176 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:table-caption!: 
+
+// Описание страницы "Мой профиль"
+// используется в my_applications
+
+[[my_profile]]
+== Страница {my_profile}
+
+После авторизации на Портале пользователю доступна страница {my_profile}.
+Данные пользователя и профиль отображаются в соответствии с выбранным профилем ЕПГУ в модальном окне.
+
+// Для роли Заявитель
+ifdef::role5_cz[]
+Если в ЕПГУ был выбран профиль ИП, то данные будут отображаться, как на <<id_image-g_mp_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_mp_1]]
+.Рисунок {counter:figure-number}. Страница {my_profile} Индивидуального предпринимателя
+image::g_mp_1.png[{image-size}, align="center"] 
+endif::[]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] | 
+На Портале автоматически создается и заполняется страница {my_profile} данными из учетной записи пользователя на ЕПГУ.
+|===
+====
+
+// Для роли Заявитель
+ifdef::role5_cz[]
+Попасть на страницу {my_profile} можно наведя курсор на аватар и выбрав в выпадающем меню {my_profile} (1) или выбрать соответствующий пункт в боковом меню (2), как на <<id_image-g_mp_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_mp_2]]
+.Рисунок {counter:figure-number}. Переход на страницу {my_profile}
+image::g_mp_2.png[{image-size}, align="center"] 
+endif::[]
+
+// Для роли Эксперт
+ifdef::role6[]
+Попасть на страницу {my_profile} можно наведя курсор на аватар и выбрав в выпадающем меню {my_profile} (1) или выбрать соответствующий пункт в боковом меню (2), как на <<id_image-g_mp_2.1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_mp_2.1]]
+.Рисунок {counter:figure-number}. Переход на страницу {my_profile}
+image::g_mp_2.1.png[{image-size}, align="center"] 
+endif::[]
+
+// Для роли Заявитель
+ifdef::role5_cz[]
+В верхней строке прописано полное ФИО. 
+С помощью поля «Выбрать профиль» можно менять профиль согласно профилям в учётной записи, как на
+<<id_image-g_mp_3, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_mp_3]]
+.Рисунок {counter:figure-number}. Поле «Выбрать профиль»
+image::g_mp_3.png[{image-size}, align="center"]
+endif::[]
+
+// Для роли Эксперт
+ifdef::role6[]
+<<id_image-g_mp_3.1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_mp_3.1]]
+.Рисунок {counter:figure-number}. Поле «Выбрать профиль»
+image::g_mp_3.1.png[{image-size}, align="center"]
+endif::[]
+
+// Для роли Заявитель весь остальной текст
+ifdef::role5_cz[]
+Для смены профиля необходимо выбрать нужный из списка. 
+После выбора {but_confirm}, как на <<id_image-g_mp_4, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_mp_4]]
+.Рисунок {counter:figure-number}. Модальное окно «Смена профиля»
+image::g_mp_4.png[{image-size1}, align="center"]
+
+
+Количество полей на странице {my_profile} меняется в зависимости от того, какой профиль выбран.
+
+Для Индивидуального предпринимателя отображаются поля в блоке «Данные индивидуального предпринимателя», как на <<id_image-g_mp_5, Рисунке {counter:figure-number}>>:
+
+* Полное наименование ИП;
+* ОГРНИП.
+
+[[id_image-g_mp_5]]
+.Рисунок {counter:figure-number}. Страница {my_profile} Индивидуального предпринимателя
+image::g_mp_5.png[{image-size1}, align="center"]
+ 
+Для Юридического лица отображаются поля в блоке «Реквизиты юридического лица», как на <<id_image-g_mp_6, Рисунке {counter:figure-number}>>:
+
+* Полное наименование организации;
+* Сокращенное наименование организации;
+* ОГРН;
+* ИНН;
+* КПП.
+
+[[id_image-g_mp_6]]
+.Рисунок {counter:figure-number}. Страница {my_profile} Юридического лица
+image::g_mp_6.png[{image-size1}, align="center"]
+ 
+Поля на странице заполняются автоматически, посредством получения данных профиля по СНИЛС из учётной записи пользователя на ЕПГУ, поля не редактируются.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] |
+Профиль, может быть, трех типов: Физическое лицо, ИП, Юридическое лицо.
+|===
+====
+
+include::my_applications.adoc[]
+
+=== Страница {auto_checks}
+
+В личном кабинете пользователя есть страница {auto_checks}. 
+На странице {auto_checks} отображаются результаты проверок по данным государственных информационных систем, как на <<id_image-g_mp_11, Рисунке {counter:figure-number}>>. 
+Они несут информационных характер и не влияют на возможность подачи заявки на отбор, но могут быть использованы при рассмотрении заявки организатором отбора.
+
+[[id_image-g_mp_11]]
+.Рисунок {counter:figure-number}. Страница {auto_checks}
+image::g_mp_11.png[{image-size1}, align="center"]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] |
+Проверки на странице {auto_checks} отображаются согласно тому профилю, в котором находится пользователь, для перехода к проверкам, по иным профилям, если они есть, необходимо сменить его на странице {my_profile}.
+|===
+====
+
+Количество проверок отличается от типа субъекта экономической деятельности. 
+Проводятся следующие проверки, которые представлены в <<id_t_autochecks_page, Таблице {counter:table-number}>>:
+
+[[id_t_autochecks_page]]
+.Таблица {counter:table-number}. Список проверок
+include::../tables/t_autochecks_page.adoc[]
+
+В случае, если пользователь впервые перешел на страницу {auto_checks} и ранее не подавал заявок на участие в отборах, то справа от заголовка {auto_checks} будет находиться кнопка «Пройти проверку», как на <<id_image-g_mp_12, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_mp_12]]
+.Рисунок {counter:figure-number}. Кнопка «Пройти проверку» для самостоятельного запуска проверок, без подачи заявки
+image::g_mp_12.png[{image-size1}, align="center"]
+
+После нажатия кнопки отправляется запрос данных по проверкам. 
+
+После нажатия и в остальных случаях кнопка не отображается.
+В случае, если пользователь не нажимал кнопку «Пройти проверку», в момент создания его первой заявки на участие в отборе автоматически отправляется запрос данных по проверке.
+ 
+include::autocheck_pic.adoc[]
+
+Над списком проверок всегда отображается дата и время последнего обновления проверок, как на <<id_image-g_mp_14, Рисунке {counter:figure-number}>>.
+ 
+[[id_image-g_mp_14]]
+.Рисунок {counter:figure-number}. Дата и время обновления проверок
+image::g_mp_14.png[{image-size}, align="center"]
+
+Обновление проверок запускается автоматически с момента создания пользователем новой заявки на участие в отборе.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Прохождение автоматической проверки возможно раз в сутки.
+|===
+====
+endif::[]

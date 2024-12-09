@@ -1,0 +1,60 @@
+include::contract.adoc[]
+
+// первая часть документа до ФТ
+//****************************** */
+// tag::start_section[]
+
+//Служеб. настрока титульника. Менять год здесь
+include::../tables/titul_doc.adoc[]
+
+//Автоматическая таблица содержания, отражает организацию разделов
+<<<<
+toc::[]
+
+// Перечень терминов и сокращений
+<<<<
+include::ed_terms_1.adoc[]
+
+// Разделы ТЗ
+<<<<
+include::chapter_1.adoc[]
+
+include::chapter_2.adoc[]
+
+include::chapter_3.adoc[]
+
+include::chapter_4_1.adoc[]
+
+
+// end::start_section[]
+//****************************** */
+
+// вторая часть документа после ФТ
+//****************************** */
+
+//tag::end_section[]
+
+include::chapter_4_3.adoc[]
+
+include::chapter_5.adoc[]
+
+include::chapter_6.adoc[]
+
+include::chapter_7.adoc[]
+
+include::chapter_8.adoc[]
+
+include::chapter_9.adoc[]
+
+include::chapter_10.adoc[]
+
+// Подписи
+<<<<
+include::../tables/t_podpis.adoc[]
+
+// Лист изменений
+<<<<
+include::../tables/t_list_change.adoc[]
+// end::end_section[]
+
+//****************************** */

@@ -1,0 +1,72 @@
+[cols="2,2,3,3,2", options="header"]
+|===
+^| Определение                                  ^| Таблица               ^| Столбец         ^| Тип Данных               ^| Обязательность
+.18+.^| Содержит информацию о модулях                .18+.^| Module                | Id              | integer                  | YES    
+                       | TemplateId      | integer                  | NO     
+                       | Urn             | character varying        | NO     
+                       | Title           | character varying        | YES    
+                       | Type            | integer                  | YES    
+                       | IsActive        | boolean                  | YES    
+                       | Order           | integer                  | YES    
+                       | CreatedDate     | timestamp with time zone | YES    
+                       | ModifiedDate    | timestamp with time zone | NO     
+                       | DeletedDate     | timestamp with time zone | NO     
+                       | CreatedBy       | uuid                     | NO     
+                       | ModifiedBy      | uuid                     | NO     
+                       | DeletedBy       | uuid                     | NO     
+                       | Name            | character varying        | YES    
+                       | ParentId        | integer                  | NO     
+                       | NavMenuPosition | integer                  | YES    
+                       | Policy          | character varying        | NO     
+                       | InHeader        | boolean                  | YES    
+.10+.^| Таблица, описывающая представления модулей   .10+.^| ModuleView            | Id              | integer                  | NO     
+                       | ParentId        | integer                  | NO     
+                       | Name            | character varying        | NO     
+                       | Title           | character varying        | NO     
+                       | Type            | integer                  | NO     
+                       | Template        | character varying        | NO     
+                       | Urn             | character varying        | NO     
+                       | IsActive        | boolean                  | NO     
+                       | Order           | integer                  | NO     
+                       | HasItems        | boolean                  | NO     
+.13+.^| Таблица, хранящая шаблоны для модулей        .13+.^| Template              | Id              | integer                  | YES    
+                      | Name            | character varying        | YES    
+                      | Title           | character varying        | YES    
+                      | Type            | integer                  | YES    
+                      | ViewJson        | text                     | NO     
+                      | QueryJson       | text                     | NO     
+                      | CreatedDate     | timestamp with time zone | YES    
+                      | ModifiedDate    | timestamp with time zone | NO     
+                      | DeletedDate     | timestamp with time zone | NO     
+                      | CreatedBy       | uuid                     | NO     
+                      | ModifiedBy      | uuid                     | NO     
+                      | DeletedBy       | uuid                     | NO     
+                      | IsPublished     | boolean                  | YES    
+.12+.^| История миграции баз данных Entity Framework .12+.^| UserTemplate          | Id              | integer                  | YES    
+                       | UserId          | uuid                     | YES    
+                       | TemplateId      | integer                  | YES    
+                       | Name            | character varying        | YES    
+                       | IsDefault       | boolean                  | YES    
+                       | JsonData        | text                     | NO     
+                       | CreatedDate     | timestamp with time zone | YES    
+                       | ModifiedDate    | timestamp with time zone | NO     
+                       | DeletedDate     | timestamp with time zone | NO     
+                       | CreatedBy       | uuid                     | NO     
+                       | ModifiedBy      | uuid                     | NO     
+                       | DeletedBy       | uuid                     | NO     
+.2+.^| История миграции баз данных Entity Framework .2+.^| __EFMigrationsHistory | MigrationId     | character varying        | YES    
+                       | ProductVersion  | character varying        | YES    
+.13+.^| Интеграционные события базы данных           .13+.^| __IntegrationEvents   | Id              | uuid                     | YES    
+                       | CreatedDate     | timestamp with time zone | YES    
+                       | ModifiedDate    | timestamp with time zone | NO     
+                       | CreatedBy       | uuid                     | NO     
+                       | ModifiedBy      | uuid                     | NO     
+                       | SourceId        | uuid                     | NO     
+                       | EventBody       | text                     | NO     
+                       | EventName       | text                     | NO     
+                       | RetryCount      | integer                  | YES    
+                       | ErrorMessage    | text                     | NO     
+                       | Status          | integer                  | YES    
+                       | Discriminator   | text                     | YES    
+                       | TokenId         | text                     | NO     
+|===

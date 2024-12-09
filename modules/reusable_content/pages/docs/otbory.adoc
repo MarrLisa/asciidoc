@@ -1,0 +1,150 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Для проверки отображения под каждую из ролей
+// :role1:
+// :role2:
+
+// Описание раздела "Отборы" и реестра в нем
+//Используется в РП1 и РП2
+
+=== {otbory}
+
+Все добавленные к субсидии отборы отображаются в реестре {otbory}. 
+Чтобы перейти в реестр необходимо на «Рабочей панели» нажать на раздел {otbory}, как на <<id_image-g_o_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_o_1]]
+.Рисунок {counter:figure-number}. Переход в раздел {otbory} из рабочей панели
+image::g_o_1.png[{image-size}, align="center"]
+
+Также перейти в раздел можно из раздела {subsidy} воспользовавшись скрытым меню с кнопками быстрого перехода между реестрами, как на <<id_image-g_o_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_o_2]]
+.Рисунок {counter:figure-number}. Переход в раздел {otbory} из реестра субсидий, через панель управления
+// Отображение для Главного распорядителя бюджетных средств
+ifdef::role1[]
+image::g_o_2.png[{image-size}, align="center"]
+endif::[]
+// Отображение для Организатора отборов
+ifdef::role2[]
+image::g_o_o_2.png[{image-size}, align="center"]
+endif::[]
+
+Для перехода к отборам, ограниченным определенной субсидией, необходимо в реестре {subsidy} воспользоваться кнопкой в строке субсидии «К отборам», как на <<id_image-g_o_3, Рисунке {counter:figure-number}>>.
+После нажатия откроется раздел {otbory} с примененным фильтром в колонке «Наименование субсидии».
+
+[[id_image-g_o_3]]
+.Рисунок {counter:figure-number}. Переход в раздел {otbory}, через кнопку «К отборам»
+// Отображение для Главного распорядителя бюджетных средств
+ifdef::role1[]
+image::g_o_3.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+image::g_o_o_3.png[{image-size}, align="center"]
+endif::[]
+
+После перехода откроется страница раздела {otbory}. 
+В данном разделе представлен реестр отборов, к которым у пользователя назначен доступ.
+Страница раздела {otbory} организована следующим образом, как на <<id_image-g_o_4, Рисунке {counter:figure-number}>>:
+
+. {hidden_menu} (1). 
+. {budget_filter} (2).
+. {buttons_panel} (3):
+* {column_selection}
+* {update_data}
+* {share_link}
+* {upload_excel}
+. {subsidy_list_table} (4) {filter_sort} (5).
+. {page_nav} (6).
+. {registry_template} (7) (подробнее о работе с шаблонами описано в xref:template_reestr.adoc#template_reestr[xrefstyle=full]):
+* {add_template}
+* {save_template}
+* {manage_template}
+ 
+[[id_image-g_o_4]]
+.Рисунок {counter:figure-number}. Страница реестра {otbory}
+image::g_o_4.png[{image-size}, align="center"]
+
+ifdef::role1,role2[]
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Старые бюджетные циклы (БЦ) автоматически закрываются. 
+Это означает, что после наступления 01.01.ГГ 00:00:00 (где ГГ>первого года БЦ) больше нет возможности создавать новые отборы по субсидиям, которые относятся к этому БЦ. 
+Неважно, опубликована ли новая версия субсидии для следующего периода, БЦ все равно закроется. 
+|===
+====
+endif::[]
+ifdef::role2_cz[]
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Старые бюджетные циклы (БЦ) автоматически закрываются. 
+Это означает, что после наступления 01.01.ГГ 00:00:00 (где ГГ>первого года БЦ) больше нет возможности создавать новые отборы по Социальным услугам, которые относятся к этому БЦ.
+|===
+====
+endif::[]
+
+{otb_list_table} состоит из следующих столбцов:
+
+. {fixed_columns}:
+.. {num_otb}.
+.. {but_sub}.
+// Отображение для Главного распорядителя бюджетных средств
+ifdef::role1[]
+.. {but_setting_otb}, без права вносить изменения.
+endif::[]
+// Отображение для Организатора отборов
+ifdef::role2[]
+.. {but_setting_otb}.
+.. {but_delete_otb}.
+.. {but_copy_otb}.
+endif::[]
+
+. {scroll_columns}: 
+.. {name_otb}, задаётся при настройках в разделе {general_setting}.
+.. {name_sub_1}. 
+.. {name_oo}. 
+.. {operat}.
+.. {status_otb}.
+.. {status_v_otb}.
+.. {sign-portal}. 
+.. {metod}.
+.. {type_user}.
+.. {budget_level2}
+.. {budget_code2}
+.. {budget_name2}
+.. {start_applic}:
+... {date_start_applic}.
+... {date_finish_applic}.
+.. {start_valid}:
+... {date_start_valid}.
+... {date_finish_valid}.
+.. {start_exp}:
+... {date_start_exp}.
+... {date_finish_exp}.
+.. {applic}:
+... {num_applic}.
+... {num_valid}.
+... {num_winner}.
+.. {num_v_otb}.
+.. {date_status}.
+.. {last_modified}.
+
+{search_filter}, как показано на <<id_image-g_o_5, Рисунке {counter:figure-number}>>: 
+
+[[id_image-g_o_5]]
+.Рисунок {counter:figure-number}. Поля поиска/фильтрации по значению колонок
+image::g_o_5.png[{image-size}, align="center"]

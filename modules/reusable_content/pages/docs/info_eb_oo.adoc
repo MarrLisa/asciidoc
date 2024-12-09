@@ -1,0 +1,28 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Справочная информация и техническая поддержка
+// используется в approval_1, approval_cz, protocol_opening
+
+Также непосредственно в системе «Электронный бюджет» пользователь может ознакомиться с информацией и инструкциями, где описаны все необходимые действия по согласованию, утверждению и другим операциям.
+
+Информацию можно найти в разделе «Техническая поддержка» в реестрах «Часто задаваемые вопросы» и «Документация», как на <<id_image-g_ieo_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_ieo_1]]
+.Рисунок {counter:figure-number}. Система «Электронный бюджет», раздел «Техническая поддержка», реестр «Часто задаваемые вопросы»
+image::g_ieo_1.png[{image-size}, align="center"]
+
+Или в разделе «Справочная информация», как на <<id_image-g_ieo_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_ieo_2]]
+.Рисунок {counter:figure-number}. Система «Электронный бюджет», раздел «Справочная информация»
+image::g_ieo_2.png[{image-size}, align="center"]

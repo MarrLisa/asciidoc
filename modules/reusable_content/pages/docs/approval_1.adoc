@@ -1,0 +1,103 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Для проверки отображения под каждую из ролей
+// :role1:
+// :role2:
+
+// Общая часть перед согласованием, все что происходит на Портале (формирование и отправка)
+// Используется в РП1 и РП2
+
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+Для отправки субсидии на согласование на странице {edit_subsidy_page} требуется нажать кнопку «Согласование», как на <<id_image-g_sa_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_1]]
+.Рисунок {counter:figure-number}. Кнопка «Согласование»
+image::g_sa_1.png[{image-size}, align="center"]
+endif::[]
+
+// Отображение макроса для Организатора отборов и согл отбора
+ifdef::role2[]
+Для отправки отбора на согласование на странице {setting_otb} требуется нажать кнопку «Согласование», как на <<id_image-g_oa_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_oa_1]]
+.Рисунок {counter:figure-number}. Кнопка «Согласование»
+image::g_oa_1.png[{image-size}, align="center"]
+endif::[]
+
+// Отображение для разных ролей
+{auto_field_check} и появится информационное сообщение с перечислением разделов, где есть незаполненные поля, как на <<id_image-g_sa_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_2]]
+.Рисунок {counter:figure-number}. Автоматическая проверка на заполненность полей
+ifdef::role1[]
+image::g_sa_2.png[{image-size1}, align="center"]
+endif::[]
+ifdef::role2[]
+image::g_oa_2.png[{image-size1}, align="center"]
+endif::[]
+
+// Описание модального окна «Направление документа на согласование»
+// Используется в файлах: approval_1.adoc, approval_cz.adoc, delete_otb.adoc, protocol_opening.adoc, protocol_review.adoc, protocol_summary.adoc,  protocol_summary_cz.adoc, sign_ap_1.adoc, sign_ap_accr_1.adoc, sign_exp_1.adoc, withdraw_application.adoc
+include::direction_doc.adoc[]
+, как на <<id_image-g_sa_3, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_3]]
+.Рисунок {counter:figure-number}. Модальное окно «Направление документа на согласование»
+ifdef::role1[]
+image::g_sa_3.png[{image-size2}, align="center"]
+endif::[]
+ifdef::role2[]
+image::g_oa_3.png[{image-size1}, align="center"]
+endif::[]
+
+После нажатия кнопки «Отправить» документ отправляется на согласование. 
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[Версия субсидии переходит в статус {st_in_review}.]
+// Отображение макроса для Организатора отборов при согл отбо
+ifdef::role2[Версия отбора переходит в статус {st_in_review}.]
+
+// Отображение для разных ролей
+
+{but_giis}, как на <<id_image-g_sa_3.1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_3.1]]
+.Рисунок {counter:figure-number}. Кнопка «Перейти в подсистему бюджетного планирования ГИИС «ЭБ»»
+ifdef::role1[]
+image::g_sa_3.1.png[{image-size2}, align="center"]
+endif::[]
+ifdef::role2[]
+image::g_oa_3.1.png[{image-size1}, align="center"]
+endif::[]
+
+Согласование и утверждение
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[профиля субсидии]
+// Отображение макроса для Организатора отборов при согл отбора
+ifdef::role2[отбора]
+происходит в системе «Электронный бюджет» в следующих разделах, как на <<id_image-g_sa_3.2, Рисунке {counter:figure-number}>>:
+
+* Если
+ifdef::role1[федеральные субсидии и операторские]
+ifdef::role2[отбор получателей федеральных субсидий и операторских]
+– _«Реестр субсидий ЮЛ, ИП, ФЛ» / «Реестр согласования субсидий ЮЛ, ИП, ФЛ (федеральные)»_.
+* Если
+ifdef::role1[региональные и муниципальные (также операторские) субсидии]
+ifdef::role2[отбор получателей региональных и муниципальных (также операторские) субсидий]
+– _«Реестр субсидий ЮЛ, ИП, ФЛ» / «Реестр согласования субсидий ЮЛ, ИП, ФЛ (региональные и муниципальные)»_.
+
+[[id_image-g_sa_3.2]]
+.Рисунок {counter:figure-number}. Переход в «Реестр согласования субсидий ЮЛ, ИП, ФЛ»
+image::g_sa_3.2.png[{image-size}, align="center"]
+
+include::info_eb_oo.adoc[]

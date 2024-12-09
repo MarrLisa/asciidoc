@@ -1,0 +1,9 @@
+
+// :doctype: book
+include::contract.adoc[]
+
+// = {name2_dokument}
+
+:title-page: 
+
+

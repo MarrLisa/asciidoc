@@ -1,0 +1,207 @@
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:image-default-align: center
+:doctype: book
+:sectnums:
+:xrefstyle: full
+:section-refsig: разделе
+include::master_text.adoc[]
+:docinfo: shared
+
+// Для проверки отображения под каждую из ролей
+// :role1:
+// :role2:
+
+// Описание стр раздела "Субсидии" и реестра в нем
+// Используется в мануалах: РП1 и РП2, так же в РП1 есть ссылка на маяк из файла subsidy_oper.adoc
+// Содержит инклюд файла subsidy_data_block.adoc
+
+[[reestr_subsidy]]
+=== {subsidy}
+
+{subsidy_data}.
+Реестр находится в разделе {subsidy}. 
+
+Для перехода в раздел надо навести курсор мыши на иконку аватара в правом верхнем углу и во всплывающем меню выбрать пункт «Субсидии и отборы», как на <<id_image-g_s_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_s_1]]
+.Рисунок {counter:figure-number}. Всплывающее меню
+image::g_s_1.png[{image-size2}, align="center"]
+
+Также можно перейти в раздел {subsidy} через административную панель «Рабочая панель». 
+Для этого нужно выбрать пункт «Рабочая панель» (1) во всплывающем меню, либо воспользоваться боковым меню на странице {my_profile} и выбрать пункт «Рабочая панель» (2), как на <<id_image-g_s_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_s_2]]
+.Рисунок {counter:figure-number}. Пункт меню «Рабочая панель»
+image::g_s_2.png[{image-size}, align="center"]
+ 
+На странице «Рабочая панель» в блоке «Администрирование» надо нажать кнопку {subsidy}, как на <<id_image-g_s_3, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_s_3]]
+.Рисунок {counter:figure-number}. Страница «Рабочая панель» кнопка {subsidy}
+image::g_s_3.png[{image-size}, align="center"]
+
+После перехода откроется страница раздела {subsidy}. 
+{grbs_subsidy_list}.
+Страница раздела {subsidy} организована следующим образом, как на <<id_image-g_s_4, Рисунке {counter:figure-number}>>:
+
+. {hidden_menu} (1). 
+. {budget_filter} (2).
+. {buttons_panel} (3):
+* {column_selection}
+* {update_data}
+* {share_link}
+* {upload_excel}
+. {subsidy_list_table} (4) {filter_sort} (5).
+. {page_nav} (6).
+. {registry_template} (7) (подробнее о работе с шаблонами описано в xref:template_reestr.adoc#template_reestr[xrefstyle=full]):
+* {add_template}
+* {save_template}
+* {manage_template}
+
+[[id_image-g_s_4]]
+.Рисунок {counter:figure-number}. Страница реестра {subsidy}
+// Отображение для Главного распорядителя бюджетных средств
+ifdef::role1[]
+image::g_s_4.png[{image-size}, align="center"]
+endif::[]
+// Отображение для Организатора отборов 
+// заменить скриншот
+ifdef::role2[]
+image::g_s_4.1.png[{image-size}, align="center"]
+endif::[]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+ifdef::role1,role2[]
+Старые бюджетные циклы (БЦ) автоматически закрываются. 
+Это означает, что после наступления 01.01.ГГ 00:00:00 (где ГГ>первого года БЦ) больше нет возможности создавать новые отборы по субсидиям, которые относятся к этому БЦ. 
+Неважно, опубликована ли новая версия субсидии для следующего периода, БЦ все равно закроется. 
+endif::[]
+ifdef::role2_cz[]
+Старые бюджетные циклы (БЦ) автоматически закрываются. 
+Это означает, что после наступления 01.01.ГГ 00:00:00 (где ГГ>первого года БЦ) больше нет возможности создавать новые отборы по Социальным услугам, которые относятся к этому БЦ.
+endif::[]
+|===
+====
+
+{subsidy_list_table} состоит из следующих колонок:
+
+. {fixed_columns}:
+.. {num_sub}.
+.. {but_otbor}.
+// Отображение для Главного распорядителя бюджетных средств
+ifdef::role1[]
+.. {but_edit_sub2}.
+//.. Кнопка «К субсидиям операторов» – по нажатию происходит переход в реестр «Субсидии (операторы)» с примененным фильтром в колонке «Наименование субсидии» (кнопка отображается только для ГРБС и не доступна для ГРБС (оператор)).
+endif::[]
+// Отображение для Организатора отборов
+ifdef::role2[]
+.. {but_new_otbor}.
+endif::[]
+
+. {scroll_columns}: 
+.. {name_sub_1}. {name_sub_2}.
+.. {name_grbs_1}. {name_grbs_2}.
+.. {sign_portal}. {autocomplete}.
+.. {status_v_sub}: 
+... {status_v_s_2}. 
+... {status_v_s_3}. 
+... {status_v_s_4}. 
+... {status_v_s_5}. 
+.. {type_sub}. 
+.. {type_recipient}. {autocomplete}.
+.. {metod}. {autocomplete}.
+.. {budget_level}
+.. {budget_code}
+.. {budget_name}
+.. {det_kbk}, как показано на <<id_image-g_s_5, Рисунке {counter:figure-number}>>: 
+
+ifdef::role1[]
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Содержит список всех КБК, которые были получены в рамках конкретного бюджетного цикла (БЦ) субсидии
+|===
+====
+endif::[]
+
+[[id_image-g_s_5]]
+.Рисунок {counter:figure-number}. Модальное окно «Детализация КБК»
+image::g_s_5.png[{image-size1}, align="center"]
+
+Таблица детализации содержит следующую информацию:
+
+. «КБК» – отображается числовой код.
+. «Наименование КБК» – наименование соответствующего КБК.
+. {year}:
+.. {assig}.
+.. {lbo}.
+.. {project_otb}.
+.. {pbo1}. 
+.. {bs}.
+ifdef::role1[]
+Также в этом столбце предусмотрена возможность ручного списания суммы.
+endif::[]
+.. {pbo2}.
+.. {ost}.
+
+// Отображение текста для Главного распорядителя бюджетных средств
+ifdef::role1[]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+При получении утвержденных бюджетных обязательств по коду бюджетной классификации (КБК) субсидии баланс по соответствующим соглашениям не обновляется автоматически. 
+Для корректировки отрицательного остатка и обеспечения возможности дальнейшего распределения средств, необходимо выполнить ручное списание требуемой суммы с соответствующего счета баланса по соглашениям. 
+|===
+====
+
+Для списания суммы в модальном окне «Детализация КБК» в строке КБК необходимо нажать иконку image:{iconsdir}pen.png[width=16,height=16], как показано на <<id_image-g_s_6, Рисунке {counter:figure-number}>>: 
+
+[[id_image-g_s_6]]
+.Рисунок {counter:figure-number}. Иконка «Карандаш»
+image::g_s_6.png[{image-size1}, align="center"]
+
+По нажатию на иконку откроется модальное окно, где можно вписать сумму для списания с КБК (1) или списать всю сумму (2), как показано на <<id_image-g_s_7, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_s_7]]
+.Рисунок {counter:figure-number}. Модальное окно «Изменение баланса по соглашениям» 
+image::g_s_7.png[{image-size1}, align="center"]
+
+endif::[]
+
+В реестре {subsidy} после колонки «Детализация по КБК» представлены следующие обобщенные данные по субсидии:
+
+* {year}:
+** {assig}.
+** {lbo}.
+** {project_otb}.
+** {pbo1}.
+** {bs}.
+// ifdef::role1[]
+// Также в этом столбце предусмотрена возможность ручного списания суммы.
+// endif::[]
+** {pbo2}.
+** {ost}. 
+В случае возникновения отрицательного значения в остатке рекомендуется проверить факт списания средств, связанных с принятыми обязательствами, из баланса по соответствующим соглашениям.
+* {num_v_sub}.
+* {date_status}.
+* {last_modified}.
+
+{search_filter}, как показано на <<id_image-g_s_8, Рисунке {counter:figure-number}>>: 
+
+[[id_image-g_s_8]]
+.Рисунок {counter:figure-number}. Поля поиска/фильтрации по значению колонок
+image::g_s_8.png[{image-size}, align="center"]
+
+// Файл описывает механизм работы с версиями профилей субсидий на Портале.
+include::subsidy_data_block.adoc[]

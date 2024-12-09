@@ -1,0 +1,230 @@
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+
+//Удаление, отмена и приостановка отбора
+// Используется только в РП2 и РП17
+// Ссылки ведут в начало файлов approval.adoc и approval_cz.adoc
+
+=== Удаление отбора или его версии
+
+Если на Портале была создана измененная версия отбора, ее возможно удалить пока она находится в статусе {st_draf}.
+Для этого необходимо в информационном блоке нажать на иконку image:{iconsdir}delete.png[width=16,height=16], как на <<id_image-g_do_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_1]]
+.Рисунок {counter:figure-number}. Иконка «Удалить версию» 
+image::g_do_1.png[{image-size1}, align="center"]
+
+Также отбор в статусе {st_draf} можно удалить в реестре 
+ifdef::role2[{otbory}]
+ifdef::role2_cz[{otbory_cz}]
+, как на <<id_image-g_do_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_2]]
+.Рисунок {counter:figure-number}. Иконка «Удалить отбор» в реестре {otbory}
+image::g_do_2.png[{image-size1}, align="center"]
+
+{but_delete}.
+
+После подтверждения версия отбора полностью удаляется.
+При удалении первой версии отбора удаляется весь отбор.
+
+Отображается иконка image:{iconsdir}delete.png[width=16,height=16] только у версии в статусе {st_draf}, которая не была на согласовании, в остальных случаях иконка image:{iconsdir}delete.png[width=16,height=16] не отображается.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Удаление версии невозможно отменить.
+|===
+====
+
+[[cancel_otb]]
+=== Отмена отбора
+
+Отмена отбора может производиться по причине форс–мажора или иных обстоятельствах, например, решение руководства или проблемы с финансированием. 
+Отмена отбора также может применяться в случае внесения некорректных данных при заполнении или выбора неподходящего шаблона заявки, так как при повышении версии их уже нельзя исправить.
+
+После публикации отбора в зависимости от статуса отбора можно его отменить. 
+Отменить отбор можно в следующих статусах отбора:
+
+* {st_on_hold};
+* {st_published}.
+
+Для отмены отбора необходимо нажать иконку image:{iconsdir}more_vertical.png[width=16,height=16] (1) и выбрать пункт «Отмена отбора» (2), как на <<id_image-g_do_3, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_3]]
+.Рисунок {counter:figure-number}. Отмена отбора 
+image::g_do_3.png[{image-size1}, align="center"]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] a|
+Иконка image:{iconsdir}more_vertical.png[width=16,height=16] не отображается в статусах отбора, которые задаются при создании первой версии в статусе {st_draf}:
+
+* {st_in_review}; +
+* {st_approved}.
+|===
+====
+
+После нажатия кнопки «Отмена отбора» происходит автоматический переход на страницу {setting_otb} с блоком «Объявление об отмене отбора», который содержит элементы, как на <<id_image-g_do_4, Рисунке {counter:figure-number}>>:
+
+. Иконка «Сохранить» image:{iconsdir}save.png[width=16,height=16] – сохраняет изменения, введённые в текстовое поле (1).
+. Статус «Объявления об отмене отбора» (2) – отображает статус самого объявления.
+. Кнопка «Согласование» – инициирует процедуру отправки документа «Объявление об отмене отбора» на согласование по аналогии с отправкой документа «Объявление об отборе» (3).
+. Текстовое поля «Причина отмены отбора» – описание причины отмены отбор, обязательно для заполнения (4).
+
+[[id_image-g_do_4]]
+.Рисунок {counter:figure-number}. Страница «Объявление об отмене отбора»
+image::g_do_4.png[{image-size1}, align="center"]
+
+После заполнения поля «Причина отмены отбора», необходимо нажать иконку image:{iconsdir}save.png[width=16,height=16] и нажать кнопку «Согласование». 
+
+// Описание модального окна «Направление документа на согласование»
+// Используется в файлах: approval_1.adoc, approval_cz.adoc, delete_otb.adoc, protocol_opening.adoc, protocol_review.adoc, protocol_summary.adoc,  protocol_summary_cz.adoc, sign_ap_1.adoc, sign_ap_accr_1.adoc, sign_exp_1.adoc, withdraw_application.adoc
+include::direction_doc.adoc[]
+, как на <<id_image-g_do_5, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_5]]
+.Рисунок {counter:figure-number}. Модальное окно «Направление документа на согласование»
+image::g_do_5.png[{image-size1}, align="center"]
+
+// Описание модального окна «Направление документа на согласование»
+// Используется в файлах: approval_1.adoc, approval_cz.adoc, delete_otb.adoc, protocol_opening.adoc, protocol_review.adoc, protocol_summary.adoc,  protocol_summary_cz.adoc, sign_ap_1.adoc, sign_ap_accr_1.adoc, sign_exp_1.adoc, withdraw_application.adoc
+include::direction_doc.adoc[]
+
+После нажатия кнопки «Отправить» документ уходит на согласование. 
+Версия объявления об отмене отбора переходит в статус {st_in_review} с возможность просмотра отправленного документа с помощью кнопки «Предпросмотр», как на <<id_image-g_do_6, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_6]]
+.Рисунок {counter:figure-number}. Кнопка «Предпросмотр» в статусе {st_in_review}
+image::g_do_6.png[{image-size1}, align="center"]
+
+Согласование объявления об отмене отбора происходит по аналогии с согласованием документа «Объявление об отборе» и подробно описано в 
+ifdef::role2[]
+xref:approval.adoc#approval_1[xrefstyle=full]
+endif::[]
+ifdef::role2_cz[]
+xref:approval_cz.adoc#approval_1[xrefstyle=full]
+endif::[]
+настоящего руководства пользователя.
+
+:delete_otb:
+
+// Общая часть после согласования, Итоги согласования , применяется условие директивы :delete_otb:
+include::approval_3.adoc[]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+После отмены отбора восстановить его невозможно. 
+При необходимости проведения отмененного отбора, возможно только создание нового отбора с прохождением всего цикла создание – настройка – отправка на согласование – согласование и утверждение – публикация.
+|===
+====
+
+=== Приостановка и активирование приостановленного отбора
+
+Приостановка отбора может производиться по причине форс–мажора или иных обстоятельствах, например, решение руководства или проблемы с финансированием. 
+Отличие приостановки отбора от отмены в том, что приостановленный отбор можно активировать и все эти действия не требуют прохождения этапов согласования и утверждения.
+
+Приостановить отбор можно только в статусе отбора: {st_published}. 
+Для приостановки отбора необходимо нажать иконку image:{iconsdir}more_vertical.png[width=16,height=16] (1) и выбрать пункт из выпадающего списка «Приостановить» (2), как на <<id_image-g_do_11, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_11]]
+.Рисунок {counter:figure-number}. Приостановка отбора 
+image::g_do_11.png[{image-size1}, align="center"]
+
+// ====
+// [%unbreakable, grid=none, frame=none, cols="1,15"]
+// |===
+// ^.^| image:{iconsdir}info.png[16,16] a|
+// Под иконкой image:{iconsdir}more_vertical.png[width=16,height=16] не отображается пункт «Приостановить» в статусах отбора: 
+
+// * {st_failed}; +
+// * {st_draf}; +
+// * {st_done}; +
+// * {st_in_review} (статус отбора первой версии до момента публикации); +
+// * {st_approved} (статус отбора первой версии до момента публикации); +
+// * {st_rejected} (статус отбора первой версии до момента публикации).
+// |===
+// ====
+
+Под иконкой image:{iconsdir}more_vertical.png[width=16,height=16] не отображается пункт «Приостановить» в статусах отбора: 
+
+* {st_failed}; 
+* {st_draf};
+* {st_done}; 
+* {st_in_review} (статус отбора первой версии до момента публикации); 
+* {st_approved} (статус отбора первой версии до момента публикации); 
+* {st_rejected} (статус отбора первой версии до момента публикации).
+
+
+
+Далее появится модальное окно «Приостановить отбор». Для приостановки отбора необходимо нажать кнопку «ОК», как на <<id_image-g_do_12, Рисунке {counter:figure-number}>>. {but_cancel}.
+
+[[id_image-g_do_12]]
+.Рисунок {counter:figure-number}. Модальное окно «Приостановить отбор»
+image::g_do_12.png[{image-size2}, align="center"]
+ 
+После приостановки отбора его статус меняется на {st_on_hold}, как на <<id_image-g_do_13, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_13]]
+.Рисунок {counter:figure-number}. Статус отбора {st_on_hold} 
+image::g_do_13.png[{image-size1}, align="center"]
+ 
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+После приостановки отбора на этапе приёма заявок дальнейший приём заявок прекращается до его активации.
+Если отбор не активирован до окончания периода приёма заявок, новые заявки приняты не будут. 
+|===
+====
+
+В случае, когда на соответствующем этапе были назначены {role_val} и (или) {role_exp} на заявки, валидирование и (или) экспертная оценка выполняются. 
+На публичной странице отбора в разделе «Ключевые даты» специальным символом будет обозначена приостановка отбора на соответствующем этапе, как на <<id_image-g_do_14, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_14]]
+.Рисунок {counter:figure-number}. Статус отбора {st_on_hold} на странице отбора на странице {navigator}
+image::g_do_14.png[{image-size1}, align="center"]
+  
+{role_oo}, либо другой {role_oo} данного 
+ifdef::role2[ГРБС]
+ifdef::role2_cz[УО]
+с доступом к отбору и правами на редактирование, может возобновить действие ранее приостановленного отбора. 
+Для возврата отбора в активный статус {st_published}, необходимо нажать иконку image:{iconsdir}more_vertical.png[width=16,height=16] (1) и из выпадающего списка выбрать пункт «Активировать» (2), как на <<id_image-g_do_15, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_15]]
+.Рисунок {counter:figure-number}. Активация отбора 
+image::g_do_15.png[{image-size1}, align="center"]
+ 
+После нажатия кнопки «Активировать» появляется модальное окно «Возобновить отбор?», для активации отбора необходимо нажать кнопку «ОК», как на <<id_image-g_do_16, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_16]]
+.Рисунок {counter:figure-number}. Модальное окно «Возобновить отбор?»
+image::g_do_16.png[{image-size2}, align="center"]
+  
+Статус отбора меняется на {st_published}, как на <<id_image-g_do_17, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_do_17]]
+.Рисунок {counter:figure-number}. Статус отбора {st_published}
+image::g_do_17.png[{image-size1}, align="center"]
+ 
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Если во время приостановки отбора создать новую версию, активировать его будет невозможно до момента перехода версии отбора в статус {st_published}.
+|===
+====

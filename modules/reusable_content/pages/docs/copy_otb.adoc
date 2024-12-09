@@ -1,0 +1,113 @@
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+//Описание действий при копировании версии отбора
+// используется только в РП2 и РП17
+// Маяк используется в ссылке в файле modification_otb.adoc
+
+
+[[copy_otb]]
+=== Копирование отбора
+
+Копирование отборов – эта функция позволяет создавать новые отборы на основе существующих отборов.
+
+В реестре 
+ifdef::role2[{otbory}]
+ifdef::role2_cz[{otbory_cz}]
+отображается иконка image:{iconsdir}copy.png[width=16,height=16] «Копировать».
+{but_copy_otb}.
+
+Поля «Краткое название отбора» и «Полное название отбора» будут содержать текст «Копия – _[Название как у исходного отбора]_».
+Предзаполненные поля в новом отборе можно редактировать.
+Новый отбор также получает новый шифр, как на <<id_image-g_co_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_co_1]]
+.Рисунок {counter:figure-number}. Страница копии, раздел {general_setting}
+ifdef::role2[]
+image::g_co_1.png[{image-size}, align="center"]
+endif::[]
+ifdef::role2_cz[]
+image::g_cocz_1.png[{image-size}, align="center"]
+endif::[]
+
+При копировании отбора также будут скопированы все шаблоны заявок в том статусе, в котором они были в исходном отборе, как на <<id_image-g_co_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_co_2]]
+.Рисунок {counter:figure-number}. Страница копии, раздел {application_template}
+ifdef::role2[]
+image::g_co_2.png[{image-size}, align="center"]
+endif::[]
+ifdef::role2_cz[]
+image::g_cocz_2.png[{image-size}, align="center"]
+endif::[]
+
+Все секции и поля внутри шаблонов повторяют секции из шаблона отбора–первоисточника.
+
+Также при копировании отбора будут скопированы данные из активной версии конкурсной комиссии. 
+При этом по умолчанию, на новом отборе конкурсная комиссия будет сохранена, но неактивна, как на <<id_image-g_co_3, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_co_3]]
+.Рисунок {counter:figure-number}. Комиссия сохранена, и ее необходимо только активировать
+ifdef::role2[]
+image::g_co_3.png[{image-size}, align="center"]
+endif::[]
+ifdef::role2_cz[]
+image::g_cocz_3.png[{image-size}, align="center"]
+endif::[]
+ 
+Положение переключателей активности каждого члена комиссии будет скопировано с исходного отбора. 
+Информация об изменении члена конкурсной комиссии будет иметь дату/время копирования нового отбора, как на <<id_image-g_co_4, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_co_4]]
+.Рисунок {counter:figure-number}. Информация об изменении члена конкурсной комиссии
+image::g_co_4.png[{image-size2}, align="center"]
+ 
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] | 
+Если активная комиссия отсутствует в исходном отборе, данные о членах комиссии не будут скопированы.
+|===
+====
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] | 
+Копируются данные из всех разделов и подразделов, но не копируются данные из разделов 
+ifdef::role2[{fund_distr}]
+ifdef::role2_cz[{fund_services}]
+и {otbor_doc}.
+|===
+====
+
+Данные из раздела 
+ifdef::role2[{fund_distr}]
+ifdef::role2_cz[{fund_services}]
+не копируются, так как копирование 
+ifdef::role2[средств]
+ifdef::role2_cz[услуг]
+на новый отбор может привести к 
+ifdef::role2[отрицательному остатку по КБК и ошибке валидации системы.]
+ifdef::role2_cz[несоответствию в распределенных услугах.]
+Кроме того, использование данных, не связанных с новым отбором, может вызвать путаницу и выбор некорректных лет и показателей в результатах.
+Чтобы избежать сложностей и ошибок валидации, раздел в новом отборе необходимо самостоятельно заполнить данными.
+
+Данные из раздела {otbor_doc} не копируется, так как в данном разделе отражаются утвержденные документы (протоколы, объявления), которых у нового отбора нет.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+При копировании новой версии отбора, автоматически проверяется изменение КБК.
+|===
+====

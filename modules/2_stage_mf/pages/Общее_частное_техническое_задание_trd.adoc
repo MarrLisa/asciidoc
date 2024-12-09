@@ -1,0 +1,67 @@
+include::common/contract.adoc[]
+include::common_rms/common_doc.adoc[]
+:docinfo: shared
+:!chapter-signifier:
+:!section-refsig:
+:table-caption!: 
+:section-refsig: разделе
+:toc: macro
+:toc-title: Содержание 
+:name1_dokument: Общее частное техническое задание
+:sectnumlevels: 7
+// Кол-во страниц соответствует пдф и версия
+:version: 1
+:page_all: 22
+:code: ТЗ-01
+:toclevels: 4
+:ramka: 1
+
+
+// :title-page: — это директива, которая создает отдельную страницу титульного листа для документа.
+
+// вставляем первую половину док
+include::common/rms_terms_of_reference.adoc[tag=start_section]
+
+// вставляем ФТ
+// === {common_ft}
+
+include::common_rms/rms_1_common.adoc[]
+include::trd_rms_1_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_2_common.adoc[]
+include::trd_rms_2_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_3_common.adoc[]
+include::trd_rms_3_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_4_common.adoc[]
+include::trd_rms_4_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_5_common.adoc[]
+include::trd_rms_5_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_6_common.adoc[]
+include::trd_rms_6_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_7_common.adoc[]
+include::trd_rms_7_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_8_common.adoc[]
+include::trd_rms_8_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_9_common.adoc[]
+include::trd_rms_9_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_10_common.adoc[]
+include::trd_rms_10_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+include::common_rms/rms_11_common.adoc[]
+include::trd_rms_11_terms_of_reference.adoc[tag=ft_rms_nnn]
+
+// Обнулить plan что бы в Общем чтз таблицах машинных носителей и сопровод листе документ печатался без последней рмс
+include::common_rms/common_doc.adoc[]
+
+// вставляем вторую половину док
+include::common/rms_terms_of_reference.adoc[tag=end_section]
+
+:rms: 0

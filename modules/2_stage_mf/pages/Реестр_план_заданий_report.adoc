@@ -1,0 +1,126 @@
+include::common/contract.adoc[]
+:docinfo: shared
+:!chapter-signifier:
+:!section-refsig:
+:table-caption!: 
+:section-refsig: разделе
+:toc: macro
+:toc-title: Содержание 
+:name1_dokument: Реестр план-заданий на доработку прикладного программного обеспечения ГИС Минфина России
+:sectnumlevels: 7
+// Кол-во страниц соответствует пдф и версия
+:version: 1
+:page_all: 22
+:code: ТЗ-02
+:toclevels: 4
+:ramka: 2
+:plan:
+// = Article Title
+// Title dfgdfd
+// Author Name
+// v1.0, 2020-02-20
+
+include::common_rms/include_rms.adoc[]
+
+// Обнулить plan что бы в Общем чтз таблицах машинных носителей и сопровод листе документ печатался без последней рмс
+:plan:
+
+[.landscape]
+<<<<
+
+[.my-bold-title]
+{name1_dokument}
+
+[.append-name-style]
+Договор {сontract_number} ({stage} этап) +     
+Государственный контракт {state_сontract})
+
+{nbsp}
+
+:!t_row:
+
+
+[%breakable, cols="1,2,2,2,9", options="header"]
+|===
+^| № п/п  ^| № План-задания    ^| Дата начала работы ^| Дата завершения работы ^| Отчет об исполнении план-задания / дата отчета
+ 
+5+| Государственная интегрированная информационная система управления общественными финансами «Электронный бюджет»
+5+| Подсистема управления расходами
+5+| Модуль организации предоставления в электронном виде мер государственной финансовой поддержки юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг
+//-----------------------1
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_1}#
+^| [.table-style-center]#{data_11}#  
+^| [.table-style-center]#{data_12}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------2
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_2}#
+^| [.table-style-center]#{data_21}#  
+^| [.table-style-center]#{data_22}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------3
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_3}#
+^| [.table-style-center]#{data_31}#  
+^| [.table-style-center]#{data_32}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------4
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_4}#
+^| [.table-style-center]#{data_41}#  
+^| [.table-style-center]#{data_42}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------5
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_5}#
+^| [.table-style-center]#{data_51}#  
+^| [.table-style-center]#{data_52}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------6
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_6}#
+^| [.table-style-center]#{data_61}#  
+^| [.table-style-center]#{data_62}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------7
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_7}#
+^| [.table-style-center]#{data_71}#  
+^| [.table-style-center]#{data_72}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------8
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_8}#
+^| [.table-style-center]#{data_81}#  
+^| [.table-style-center]#{data_82}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------9
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_9}#
+^| [.table-style-center]#{data_91}#  
+^| [.table-style-center]#{data_92}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------10
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_10}#
+^| [.table-style-center]#{data_101}#  
+^| [.table-style-center]#{data_102}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+//-----------------------11
+^| [.table-style-center]#{counter:t_row}#.
+|  [.table-style-left]#RMS-{rms_11}#
+^| [.table-style-center]#{data_111}#  
+^| [.table-style-center]#{data_112}#                              
+| Отчет о выполненной адаптации (модификации) ППО от {end_period} года
+
+|===
+
+:!t_row:
+
+
+{nbsp}
+
+include::tables/titul_report.adoc[tag=titul_start_utv2]
+
+:rms: 0

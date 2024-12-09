@@ -1,0 +1,36 @@
+[cols="1,3,2,6", options="header"]
+|===
+^| № +
+п/п ^| Наименование схемы БД ^| Вид хранилища                         ^| Описание  
+^| {counter:t_row}. | myrtex-minfin-access-prod             | PostgreSQL | Система управления правами доступа для приложения
+^| {counter:t_row}. | myrtex-minfin-application-prod        | PostgreSQL | Сервис «Прием заявок/Рассмотрение», обработки заявок на меры поддержки
+^| {counter:t_row}. | myrtex-minfin-chat-prod               | PostgreSQL | Сервис «Диалоги», сервис чата для взаимодействия с пользователями в режиме реального времени 
+^| {counter:t_row}. | myrtex-minfin-dictionary-prod         | PostgreSQL | Сервис хранения и управления словарями данных, используемых в системе
+^| {counter:t_row}. | myrtex-minfin-emailtemplate-prod      | PostgreSQL | Сервис «Уведомления» почта (ГЭПС), сервис хранения и управления шаблонами электронных писем
+^| {counter:t_row}. | myrtex-minfin-expertise-prod          | PostgreSQL | Сервис «Экспертиза заявок»
+^| {counter:t_row}. | myrtex-minfin-file-prod               | PostgreSQL | Файловый сервер
+^| {counter:t_row}. | myrtex-minfin-grbs-prod               | PostgreSQL | Схема, по которой происходит первичная фильтрация к данным                                                                                                                               
+^| {counter:t_row}. | myrtex-minfin-identity-prod           | PostgreSQL | Сервис управления идентификацией пользователей                                                                                                                                           
+^| {counter:t_row}. | myrtex-minfin-integration-prod        | PostgreSQL | Сервис по взаимодействию с внешними системами                                                                                                                                            
+^| {counter:t_row}. | myrtex-minfin-m-agreement-prod        | PostgreSQL | Сервис «Соглашение», сервис хранения и управления соглашениями с пользователями                                                                                                          
+^| {counter:t_row}. | myrtex-minfin-mf-data-prod            | PostgreSQL | Сервис «Реестры старые, публичные страницы»                                                                                                                                              
+^| {counter:t_row}. | myrtex-minfin-mrecipient-profile-prod | PostgreSQL | Сервис «Профиль получателя»                                                                                                                                                              
+^| {counter:t_row}. | myrtex-minfin-mvc-prod                | PostgreSQL | Сервис обработки запросов от веб-браузеров                                                                                                                                               
+^| {counter:t_row}. | myrtex-minfin-navigator-prod          | PostgreSQL | Конструктор представлений данных. Отвечает за вывод в интерфейсе структурированных данных пользователям (реестры, карточки), их фильтрацию, сортировку и выгрузку, а также Рабочей панели
+^| {counter:t_row}. | myrtex-minfin-notification-prod       | PostgreSQL | Сервис «Уведомления на потрале»                                                                                                                                                          
+^| {counter:t_row}. | myrtex-minfin-nsi-prod                | PostgreSQL | Сервис «Справочники»                                                                                                                                                                     
+^| {counter:t_row}. | myrtex-minfin-process-prod            | PostgreSQL | Схема управления бизнес-процессами                                                                                                                                                       
+^| {counter:t_row}. | myrtex-minfin-project-prod            | PostgreSQL | Конструктор форм. Отвечает за вывод в интерфейсе структурированных форм, для формирования шаблонов.                                                                                      
+^| {counter:t_row}. | myrtex-minfin-public-prod             | PostgreSQL | Сервис «Новости/Настройки сайта», сервис предоставления публичной информации                                                                                                             
+^| {counter:t_row}. | myrtex-minfin-report-prod             | PostgreSQL | Сервис «Формирование документов»                                                                                                                                                         
+^| {counter:t_row}. | myrtex-minfin-result-prod             | PostgreSQL | Сервис «Распределение средств/услуг»                                                                                                                                                     
+^| {counter:t_row}. | myrtex-minfin-scheduling-prod         | PostgreSQL | Планировщик                                                                                                                                                                              
+^| {counter:t_row}. | myrtex-minfin-sign-prod               | PostgreSQL | Сервис «Подписание документов объекта»                                                                                                                                                   
+^| {counter:t_row}. | myrtex-minfin-smev-proxy-prod         | PostgreSQL | Сервис по взаимодействию с внешними ГИС посредством СМЭВ                                                                                                                                 
+^| {counter:t_row}. | myrtex-minfin-subscriptions-prod      | PostgreSQL | Схема для функции подписки на субсидии и отборы                                                                                                                                          
+^| {counter:t_row}. | myrtex-minfin-template-prod           | PostgreSQL | Сервис «Шаблоны»                                                                                                                                                                         
+^| {counter:t_row}. | myrtex-minfin-support-center-prod     | PostgreSQL | Сервис «Техническая поддержка»                                                                                                                                                           
+^| {counter:t_row}. | myrtex-minfin-unit-prod               | PostgreSQL | Пакетное решение для хранения информации по организациям и профилям пользователей                                                                                                        
+^| {counter:t_row}. | myrtex-minfin-user-prod               | PostgreSQL | Сервис «Личный кабинет пользователя»                                                                                                                                                     
+|===
+:!t_row:

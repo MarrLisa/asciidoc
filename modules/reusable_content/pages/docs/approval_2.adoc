@@ -1,0 +1,755 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Для проверки отображения под каждую из ролей
+// :role1:
+// :role2:
+
+// БАРС
+// не актуально и нигде не используется
+
+[[approval_2]]
+
+=== Действия в Подсистеме ГИИС ЭБ
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+.3+^.^|image:{iconsdir}control.png[16,16] | 
+Для федеральных субсидий - осуществлен вход с ролью «Формирование сведений о субсидии, в том числе грантов в форме субсидий юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг» (ФОИВ) (Ввод данных).
+| Для региональных и муниципальных субсидий - осуществлен вход с ролью «Формирование сведений о субсидии, в том числе грантов в форме субсидий юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг» (РОИВ) (ОМС МО) (Ввод данных). | Для операторских субсидий - осуществлен вход с ролью «Формирование сведений о субсидии, в том числе грантов в форме субсидий юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг» (Оператор) (Ввод данных).
+|===
+====
+
+Для формирования листа согласования необходимо одним нажатием левой кнопки мыши выбрать соответствующую строку, нажать кнопку «Согласование» и одним нажатием левой кнопки мыши выбрать пункт _[Внешнее согласование/Согласование протокола организатором отбора/Согласование резолюции]_, как на <<id_image-g_sa_4, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_4]]
+.Рисунок {counter:figure-number}. Формирование листа согласования
+image::g_sa_4.png[{image-size}, align="center"]
+endif::[]
+
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}control.png[16,16] |
+Осуществлен вход с ролью «Организация отбора получателей субсидий, в том числе грантов в форме субсидий, юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг»/(Оператор)/(региональные, муниципальные организаторы отборов) (Ввод данных).
+|===
+====
+
+Для формирования листа согласования необходимо выделить соответствующую строку со статусом {st_draf} в графе «Статус», нажать кнопку «Согласование» и выбрать пункт _[Согласование]_, как на <<id_image-g_oa_4, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_oa_4]]
+.Рисунок {counter:figure-number}. Формирование листа согласования
+image::g_oa_4.png[{image-size}, align="center"]
+endif::[]
+
+В результате откроется окно «Лист согласования», как на <<id_image-g_sa_5, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_5]]
+.Рисунок {counter:figure-number}. Окно «Лист согласования»
+image::g_sa_5.png[{image-size1}, align="center"]
+
+=== Заполнение листа согласования вручную
+
+{but_add_user1}, как на <<id_image-g_sa_6, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_6]]
+.Рисунок {counter:figure-number}. Добавление согласующих и утверждающего
+image::g_sa_6.png[{image-size1}, align="center"]
+
+{add_user}, как на <<id_image-g_sa_7, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_7]]
+.Рисунок {counter:figure-number}. Окно «Добавление пользователя»
+image::g_sa_7.png[{image-size1}, align="center"]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+{select_user}. 
+Лист согласования невозможно сохранить, если не выбран утверждающий. 
+|===
+====
+
+В результате в лист согласования будут добавлены согласующие и утверждающий, как на <<id_image-g_sa_8, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_8]]
+.Рисунок {counter:figure-number}. Лист согласования с добавленными согласующими и утверждающим
+image::g_sa_8.png[{image-size1}, align="center"]
+
+После добавления перечня согласующих и утверждающего реализована возможность сохранения листа согласования в качестве шаблона. 
+Для этого необходимо нажать кнопку «Сохранить шаблон листа согласования», как на <<id_image-g_sa_9, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_9]]
+.Рисунок {counter:figure-number}. Сохранение шаблона «Листа согласования»
+image::g_sa_9.png[{image-size1}, align="center"]
+
+После этого откроется окно «Выбор параметров шаблона», как на <<id_image-g_sa_10, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_10]]
+.Рисунок {counter:figure-number}. Окно «Выбор параметров шаблона»
+image::g_sa_10.png[{image-size2}, align="center"] 
+
+Поле «Наименование шаблона» заполняется автоматически и редактируется вручную с клавиатуры.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Поле «Наименование шаблона» обязательно для заполнения.
+|===
+====
+
+Поле «Заменить существующий шаблон» заполняется выбором значения из справочника.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Поле «Заменить существующий шаблон» заполняется в том случае, если необходимо заменить уже созданный ранее шаблон.
+|===
+====
+
+Поля «Дата начала действия» и «Дата окончания действия» заполняются автоматически и редактируются выбором значения из календаря.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Поля «Дата начала действия» и «Дата окончания действия» обязательны для заполнения.
+|===
+====
+
+{but_save}, как на <<id_image-g_sa_11, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_11]]
+.Рисунок {counter:figure-number}. Сохранение шаблона, кнопка «Сохранить»
+image::g_sa_11.png[{image-size2}, align="center"]  
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^|image:{iconsdir}warning.png[16,16] |
+Если в подразделе «Реестр шаблонов листов согласования» уже имеется шаблон с аналогичным перечнем согласующих и утверждающим, то выводится системное сообщение об отмене сохранения шаблона, как на <<id_image-g_sa_12, Рисунке {counter:figure-number}>>. 
+|===
+====
+
+[[id_image-g_sa_12]] 
+.Рисунок {counter:figure-number}. Системное сообщение об отмене сохранения
+image::g_sa_12.png[{image-size2}, align="center"]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Если в блоке «Утверждающий» не выбран пользователь, то выводится системное сообщение о необходимости заполнения блока «Утверждающий», как на <<id_image-g_sa_13, Рисунке {counter:figure-number}>>.
+|===
+==== 
+
+[[id_image-g_sa_13]]
+.Рисунок {counter:figure-number}. Системное сообщение об отмене сохранения
+image::g_sa_13.png[{image-size2}, align="center"] 
+
+В результате выводится системное сообщение об успешном сохранении шаблона листа согласования, как на <<id_image-g_sa_14, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_14]]
+.Рисунок {counter:figure-number}. Системное сообщение о успешном сохранении шаблона
+image::g_sa_14.png[{image-size2}, align="center"] 
+
+=== Заполнение листа согласования на основании шаблона
+
+Для заполнения листа согласования на основании шаблона необходимо нажать кнопку «Заполнить из шаблона листа согласования», как на <<id_image-g_sa_15, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_15]]
+.Рисунок {counter:figure-number}. Кнопка «Заполнить из шаблона листа согласования»
+image::g_sa_15.png[{image-size1}, align="center"] 
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Кнопка «Заполнить из шаблона листа согласования» доступна только при формировании листа согласования.
+|===
+====
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Использование шаблона возможно в рамках учреждения, к которому относится пользователь.
+|===
+====
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Использование шаблона возможно только в том подразделе, в котором он сформирован.
+|===
+====
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Если ранее пользователем или другими участниками учреждения не создавались шаблоны, то заполнение листа согласования на основании шаблона невозможно.
+|===
+====
+
+После этого откроется окно «Выбор шаблона листа согласования», в котором необходимо установить «галочку» напротив соответствующего шаблона и нажать кнопку «Выбрать», как на <<id_image-g_sa_16, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_16]]
+.Рисунок {counter:figure-number}. Окно «Выбор шаблона листа согласования»
+image::g_sa_16.png[{image-size1}, align="center"] 
+
+В результате лист согласования заполнится на основании выбранного шаблона, как на <<id_image-g_sa_17, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_17]]
+.Рисунок {counter:figure-number}. Заполненный по шаблону лист согласования
+image::g_sa_17.png[{image-size1}, align="center"] 
+
+=== Выбор типа согласования
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] |
+{agreement_type}, как на <<id_image-g_sa_18, Рисунке {counter:figure-number}>>.
+|===
+====  
+
+[[id_image-g_sa_18]]
+.Рисунок {counter:figure-number}. Тип согласования
+image::g_sa_18.png[{image-size1}, align="center"]
+
+{change_type}, как на <<id_image-g_sa_19, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_19]]
+.Рисунок {counter:figure-number}. Изменение типа согласования
+image::g_sa_19.png[{image-size1}, align="center"]  
+
+==== Сохранение и редактирование листа согласования
+
+Для сохранения листа согласования необходимо нажать кнопку «Сохранить», как на <<id_image-g_sa_20, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_20]]
+.Рисунок {counter:figure-number}. Кнопка «Сохранить»
+image::g_sa_20.png[{image-size1}, align="center"] 
+
+В результате статус соответствующей строки в графе «Статус» изменится на {st_in_review}.
+
+{befor_approval}
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+{delete_user} 
+|===
+====
+
+{but_edit_user}, как на <<id_image-g_sa_21, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_21]]
+.Рисунок {counter:figure-number}. Кнопка «Редактировать»
+image::g_sa_21.png[{image-size1}, align="center"] 
+
+{but_delete_user}, как на <<id_image-g_sa_22, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_22]]
+.Рисунок {counter:figure-number}. Удаление согласующего, кнопка «Удалить»
+image::g_sa_22.png[{image-size1}, align="center"]
+
+В результате выбранная строка удалится.
+
+{but_add_user}, как на <<id_image-g_sa_23, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_23]]
+.Рисунок {counter:figure-number}. Добавление согласующего, кнопка «Добавить»
+image::g_sa_23.png[{image-size1}, align="center"] 
+
+{add_user}, как на <<id_image-g_sa_24, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_24]]
+.Рисунок {counter:figure-number}. Окно «Добавление пользователя»
+image::g_sa_24.png[{image-size2}, align="center"]
+
+{exchange_user}, как на <<id_image-g_sa_25, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_25]]
+.Рисунок {counter:figure-number}. Замена согласующего, кнопка «Заменить»
+image::g_sa_25.png[{image-size1}, align="center"]
+
+{add_user}, как на <<id_image-g_sa_26, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_26]]
+.Рисунок {counter:figure-number}. Окно «Добавление пользователя»
+image::g_sa_26.png[{image-size2}, align="center"]
+
+{but_save}, как на <<id_image-g_sa_27, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_27]]
+.Рисунок {counter:figure-number}. Кнопка «Сохранить»
+image::g_sa_27.png[{image-size1}, align="center"]
+
+{after_approval}
+
+=== Согласование
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}control.png[16,16] |
+Осуществлен вход с ролью «Формирование сведений о субсидии, в том числе грантов в форме субсидий юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг» (Согласование).
+|===
+====
+
+Для согласования документа необходимо выделить соответствующую строку одним нажатием левой кнопки мыши, нажать кнопку «Согласование» и выбрать пункт _[Согласование]_.
+
+{allocation_another}.
+
+{but_agreed}, как на <<id_image-g_sa_28, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_28]]
+.Рисунок {counter:figure-number}. Кнопка «Согласовано»
+image::g_sa_28.png[{image-size1}, align="center"]
+
+{status_agreed}.
+
+Для отказа в согласовании необходимо выделить соответствующую строку одним нажатием левой кнопки мыши и нажать кнопку «Согласование» и выбрать пункт _[Согласование]_.
+
+{but_not_agreed}, как на <<id_image-g_sa_29, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_29]]
+.Рисунок {counter:figure-number}. Кнопка «Не согласовано»
+image::g_sa_29.png[{image-size1}, align="center"]
+
+{comment_apply}, как на <<id_image-g_sa_30, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_30]]
+.Рисунок {counter:figure-number}. Окно «Ввод комментария», кнопка «Применить»
+image::g_sa_30.png[{image-size2}, align="center"] 
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] | {field_comment}
+|===
+====
+
+{status_not_agreed}. 
+Указанный статус не будет передан на Портал, но позволит скорректировать лист согласования к текущему документу для проведения его повторного согласования.
+
+Для отклонения документа и возврата к его редактированию на Портале необходимо сформировать и утвердить Уведомление об отклонении документа, действия описаны в разделе <<subsidy_rejection, «Отклонение»>> настоящего руководства пользователей.
+
+=== Утверждение
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}control.png[16,16] |
+Осуществлен вход с ролью «Формирование сведений о субсидии, в том числе грантов в форме субсидий юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг» (Утверждение).
+|===
+====
+
+Для утверждения документа необходимо выделить соответствующую строку одним нажатием левой кнопки мыши, нажать кнопку «Согласование» и выбрать пункт _[Согласование]_.
+
+{approval_sheet} «Утверждено», как на <<id_image-g_sa_31, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_31]]
+.Рисунок {counter:figure-number}. Кнопка «Утверждено»
+image::g_sa_31.png[{image-size1}, align="center"]
+
+{comment_apply}, как на <<id_image-g_sa_32, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_32]]
+.Рисунок {counter:figure-number}. Окно «Ввод комментария», кнопка «Применить»
+image::g_sa_32.png[{image-size2}, align="center"] 
+
+{certificate_selection}, как на <<id_image-g_sa_33, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_33]]
+.Рисунок {counter:figure-number}. Окно «Выбор сертификата», кнопка «Далее»
+image::g_sa_33.png[{image-size1}, align="center"]
+
+{doc_signed}.
+
+[[subsidy_rejection]]
+=== Отклонение
+
+Для формирования уведомления об отклонении необходимо одним нажатием левой кнопки мыши выделить строку со статусом {st_draf}, нажать кнопку «Уведомление об отклонении» и выбрать пункт _[Уведомление об отклонении]_, как на
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_34, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_34]]
+.Рисунок {counter:figure-number}. Формирование уведомления об отклонении
+image::g_sa_34.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_5, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_oa_5]]
+.Рисунок {counter:figure-number}. Формирование уведомления об отклонении
+image::g_oa_5.png[{image-size}, align="center"]
+endif::[]
+
+В результате откроется окно «Уведомление об отклонении документа», как на <<id_image-g_sa_35, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_35]]
+.Рисунок {counter:figure-number}. Окно «Уведомление об отклонении документа»
+image::g_sa_35.png[{image-size1}, align="center"]
+
+Поле «Решение» заполняется автоматически и недоступно для редактирования.
+
+Поле «Текст решения о согласовании» заполняется вручную с клавиатуры.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Поле «Текст решения о согласовании» обязательно для заполнения.
+|===
+====
+
+Поле «ФИО, должность, структурное подразделение автора резолюции» заполняется автоматически после нажатия кнопку «Сохранить».
+
+{but_save}, как на <<id_image-g_sa_36, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_36]]
+.Рисунок {counter:figure-number}. Сохранение введенных данных
+image::g_sa_36.png[{image-size1}, align="center"]
+
+==== Формирование листа согласования уведомления об отклонении документа
+
+Для формирования листа согласования уведомления об отклонении необходимо одним нажатием левой кнопки мыши выделить соответствующую строку со статусом {st_draf}, нажать кнопку «Уведомление об отклонении» и выбрать пункт _[Согласование уведомления об отклонении]_, как на
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_37, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_37]]
+.Рисунок {counter:figure-number}. Формирование листа согласования уведомления об отклонении документа
+image::g_sa_37.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_6, Рисунке {counter:figure-number}>>.
+[[id_image-g_oa_6]]
+.Рисунок {counter:figure-number}. Формирование листа согласования уведомления об отклонении документа
+image::g_oa_6.png[{image-size}, align="center"]
+endif::[]
+
+Далее откроется окно «Лист согласования уведомления об отклонении документа», как на <<id_image-g_sa_38, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_38]]
+.Рисунок {counter:figure-number}. Окно «Лист согласования уведомления об отклонении документа»
+image::g_sa_38.png[{image-size1}, align="center"]
+
+==== Заполнение листа согласования уведомления об отклонении документа вручную
+
+{but_add_user1}, как на <<id_image-g_sa_39, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_39]]
+.Рисунок {counter:figure-number}. Добавление согласующего лица и утверждающего лица
+image::g_sa_39.png[{image-size1}, align="center"] 
+
+{add_user}, как на <<id_image-g_sa_40, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_40]]
+.Рисунок {counter:figure-number}. Добавление пользователей
+image::g_sa_40.png[{image-size2}, align="center"] 
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+{select_user} уведомления об отклонении документа. 
+Лист согласования уведомления об отклонении документа невозможно сохранить, если не выбрано утверждающее лицо.
+|===
+====
+
+В результате в лист согласования уведомления об отклонении документа будут добавлены согласующие и утверждающие лица, как на <<id_image-g_sa_41, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_41]]
+.Рисунок {counter:figure-number}. Окно «Лист согласования уведомления об отклонении документа»
+image::g_sa_41.png[{image-size1}, align="center"]
+
+==== Выбор типа согласования
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] |
+{agreement_type}, как на <<id_image-g_sa_42, Рисунке {counter:figure-number}>>.
+|===
+====
+
+[[id_image-g_sa_42]]
+.Рисунок {counter:figure-number}. Тип согласования
+image::g_sa_42.png[{image-size1}, align="center"] 
+
+{change_type}, как на <<id_image-g_sa_43, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_43]]
+.Рисунок {counter:figure-number}. Тип согласования
+image::g_sa_43.png[{image-size1}, align="center"] 
+
+Сохранение и редактирование листа согласования уведомления об отклонении документа.
+
+Для сохранения листа согласования уведомления об отклонении документа необходимо нажать кнопку «Сохранить», как на <<id_image-g_sa_44, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_44]]
+.Рисунок {counter:figure-number}. Сохранение данных
+image::g_sa_44.png[{image-size1}, align="center"] 
+
+{befor_approval}
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16]| 
+{delete_user}
+|===
+====
+
+{but_edit_user}, как на <<id_image-g_sa_45, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_45]]
+.Рисунок {counter:figure-number}. Редактирование листа согласования
+image::g_sa_45.png[{image-size1}, align="center"]
+
+{but_delete_user}, как на <<id_image-g_sa_46, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_46]]
+.Рисунок {counter:figure-number}. Удаление пользователя
+image::g_sa_46.png[{image-size1}, align="center"]
+
+{but_add_user}, как на <<id_image-g_sa_47, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_47]]
+.Рисунок {counter:figure-number}. Добавление пользователя
+image::g_sa_47.png[{image-size1}, align="center"]
+
+{add_user}, как на <<id_image-g_sa_48, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_48]]
+.Рисунок {counter:figure-number}. Добавление пользователя
+image::g_sa_48.png[{image-size2}, align="center"]
+
+{exchange_user}, как на <<id_image-g_sa_49, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_49]]
+.Рисунок {counter:figure-number}. Замена пользователя
+image::g_sa_49.png[{image-size1}, align="center"]
+
+{add_user}, как на <<id_image-g_sa_50, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_50]]
+.Рисунок {counter:figure-number}. Добавление пользователя
+image::g_sa_50.png[{image-size2}, align="center"]
+
+{but_save}, как на <<id_image-g_sa_51, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_51]]
+.Рисунок {counter:figure-number}. Сохранение листа согласования
+image::g_sa_51.png[{image-size1}, align="center"] 
+
+{after_approval}
+
+==== Согласование уведомления об отклонении
+
+Для согласования уведомления об отклонении необходимо выделить соответствующую строку одним нажатием левой кнопки мыши, нажать кнопку «Уведомление об отклонении» и выбрать пункт _[Согласование уведомления об отклонении]_, как на 
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_52, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_52]]
+.Рисунок {counter:figure-number}. Согласование информации
+image::g_sa_52.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_7, Рисунке {counter:figure-number}>>.
+[[id_image-g_oa_7]]
+.Рисунок {counter:figure-number}. Согласование информации
+image::g_oa_7.png[{image-size}, align="center"]
+endif::[]
+
+{allocation_another}.
+
+{but_agreed}, как на <<id_image-g_sa_53, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_53]]
+.Рисунок {counter:figure-number}. Согласование документа
+image::g_sa_53.png[{image-size1}, align="center"] 
+
+{comment_apply}, как на <<id_image-g_sa_54, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_54]]
+.Рисунок {counter:figure-number}. Окно «Ввод комментария»
+image::g_sa_54.png[{image-size2}, align="center"]
+
+{status_agreed}, как на 
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_55, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_55]]
+.Рисунок {counter:figure-number}. Строка со статусом «Согласовано»
+image::g_sa_55.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_8, Рисунке {counter:figure-number}>>.
+[[id_image-g_oa_8]]
+.Рисунок {counter:figure-number}. Строка со статусом «Согласовано»
+image::g_oa_8.png[{image-size}, align="center"]
+endif::[]
+
+Для отказа в согласовании уведомления об отклонении необходимо выделить соответствующую строку одним нажатием левой кнопки мыши, нажать кнопку «Уведомление об отклонении» и выбрать пункт _[Согласование уведомления об отклонении]_, как на 
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_56, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_56]]
+.Рисунок {counter:figure-number}. Отказ в согласовании
+image::g_sa_56.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_9, Рисунке {counter:figure-number}>>.
+[[id_image-g_oa_9]]
+.Рисунок {counter:figure-number}. Отказ в согласовании
+image::g_oa_9.png[{image-size}, align="center"]
+endif::[]
+
+{allocation_another}.
+
+{but_not_agreed}, как на <<id_image-g_sa_57, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_57]]
+.Рисунок {counter:figure-number}. Лист согласования
+image::g_sa_57.png[{image-size1}, align="center"]
+
+{comment_apply}, как на <<id_image-g_sa_58, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_58]]
+.Рисунок {counter:figure-number}. Окно «Ввод комментария»
+image::g_sa_58.png[{image-size2}, align="center"] 
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] | {field_comment}
+|===
+====
+
+{status_not_agreed}, как на 
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_59, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_59]]
+.Рисунок {counter:figure-number}. Строка со статусом «Не согласовано»
+image::g_sa_59.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_10, Рисунке {counter:figure-number}>>.
+[[id_image-g_oa_10]]
+.Рисунок {counter:figure-number}. Строка со статусом «Не согласовано»
+image::g_oa_10.png[{image-size}, align="center"]
+endif::[]
+
+==== Утверждение уведомления об отклонении
+
+Для утверждения информации, необходимо одним нажатием левой кнопки мыши выделить соответствующую строку, нажать кнопку «Уведомление об отклонении» и выбрать пункт _[Согласование уведомлений об отклонении]_, как на 
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_60, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_60]]
+.Рисунок {counter:figure-number}. Утверждение информации
+image::g_sa_60.png[{image-size}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_11, Рисунке {counter:figure-number}>>.
+[[id_image-g_oa_11]]
+.Рисунок {counter:figure-number}. Утверждение информации
+image::g_oa_11.png[{image-size}, align="center"]
+endif::[]
+
+В открывшемся окне «Лист согласования уведомления об отклонении документа» необходимо нажать кнопку «Утверждено», как на <<id_image-g_sa_61, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_61]]
+.Рисунок {counter:figure-number}. Окно «Лист согласования уведомления об отклонении документа»
+image::g_sa_61.png[{image-size1}, align="center"]
+
+{comment_apply}, как на <<id_image-g_sa_62, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_62]]
+.Рисунок {counter:figure-number}. Окно «Ввод комментария»
+image::g_sa_62.png[{image-size2}, align="center"]
+
+{certificate_selection}, как на <<id_image-g_sa_63, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_63]]
+.Рисунок {counter:figure-number}. Окно «Выбор сертификата»
+image::g_sa_63.png[{image-size1}, align="center"]
+
+{doc_signed}, как на 
+// Отображение макроса для Главного распорядителя бюджетных средств
+ifdef::role1[]
+<<id_image-g_sa_64, Рисунке {counter:figure-number}>>.
+[[id_image-g_sa_64]]
+.Рисунок {counter:figure-number}. Документ для подписи
+image::g_sa_64.png[{image-size1}, align="center"]
+endif::[]
+// Отображение макроса для Организатора отборов
+ifdef::role2[]
+<<id_image-g_oa_12, Рисунке {counter:figure-number}>>.
+[[id_image-g_oa_12]]
+.Рисунок {counter:figure-number}. Документ для подписи
+image::g_oa_12.png[{image-size}, align="center"]
+endif::[]
+
+Для отказа в утверждении информации необходимо выделить соответствующую строку одним нажатием левой кнопки мыши, «Уведомление об отклонении» и выбрать пункт _[Согласование уведомлений об отклонении]_, как на <<id_image-g_sa_65, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_65]]
+.Рисунок {counter:figure-number}. Отказ в утверждении информации
+image::g_sa_65.png[{image-size}, align="center"]
+
+{approval_sheet} «Не утверждено», как на <<id_image-g_sa_66, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_66]]
+.Рисунок {counter:figure-number}. Окно «Лист согласования уведомления об отклонении документа»
+image::g_sa_66.png[{image-size1}, align="center"]
+
+{comment_apply}, как на <<id_image-g_sa_67, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_67]]
+.Рисунок {counter:figure-number}. Окно «Ввод комментария»
+image::g_sa_67.png[{image-size2}, align="center"]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+{field_comment}.
+|===
+====
+
+{status_not_agreed}, как на <<id_image-g_sa_68, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_sa_68]]
+.Рисунок {counter:figure-number}. Строка со статусом «Не согласовано»
+image::g_sa_68.png[{image-size}, align="center"] 
+

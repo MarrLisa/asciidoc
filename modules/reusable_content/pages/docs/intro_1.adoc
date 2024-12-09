@@ -1,0 +1,31 @@
+include::master_text.adoc[]
+:table-caption!: 
+:figure-caption!:
+:doctype: book
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:docinfo: shared
+
+// Главы Перечень терминов и сокращений и Введение, где отражена таблица полномочий ГРБС
+//Используется только для РП1 (ГРБС), в последующем можно оптимизировать (объединить условиями с интро-2)
+
+== Перечень терминов и сокращений
+
+Перечень сокращений, терминов и определений представлен в <<id_table_l_term_1, Таблице {counter:table-number}>>.
+
+[[id_table_l_term_1]]
+.Таблица {counter:table-number}. Перечень терминов и сокращений
+include::../tables/t_l_term_1.adoc[]
+
+<<<<
+// :table-caption!: 
+
+== Введение
+
+{nast_doc} роли «{role_grbs}», {used} настройке и формированию (изменению) профиля субсидии в целях его публикации на Портале и Едином Портале государственных и муниципальных услуг.
+
+{func} <<id_table_1, Таблице {counter:table-number}>>.
+
+[[id_table_1]]
+.Таблица {counter:table-number}. Функции и полномочия
+include::../tables/t_intro_1.adoc[]

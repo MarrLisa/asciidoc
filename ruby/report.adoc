@@ -1,0 +1,29 @@
+:work: Отчёт по лабораторной работе
+:workNumber: 1
+:subject: Название предмета
+:theme: Название темы
+:author: Имя автора
+:group: Номер группы
+:tutorPosition: Должность проверившего
+:tutorName: Имя проверившего
+:doctype: book
+:page-count:
+include::template.adoc[]
+
+
+
+= {work} №{worknumber}
+
+:title-page:
+
+:toc:
+
+== Цель работы
+
+{page-count}
+
+You're looking at page number pagenum:[].
+
+== Выполнение работы
+
+== Вывод

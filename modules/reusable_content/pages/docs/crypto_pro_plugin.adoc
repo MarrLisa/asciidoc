@@ -1,0 +1,283 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:image-size3: width=220, height=auto
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Установка и процесс работы с КриптоПРо
+// используется в 16 РП
+
+== КриптоПро ЭЦП Browser plug-in 
+
+КриптоПро ЭЦП Browser plug-in представляет собой инструмент, предназначенный для создания и проверки электронной подписи (ЭП) прямо на веб-страницах. Этот плагин обладает широким спектром функций и поддерживает множество алгоритмов, включая как встроенные в операционную систему, так и дополнительно установленные.
+
+КриптоПро ЭЦП Browser plug-in позволяет создавать и проверять как обычную, так и усовершенствованную электронную подпись. Благодаря встроенной поддержке усовершенствованной электронной цифровой подписи плагин автоматически решает задачи доказательства момента подписи документа и действительности сертификата ключа подписи на этот момент, а также обеспечивает возможность проверки подписи без необходимости онлайн-соединения. Кроме того, он обеспечивает архивное хранение электронных документов.
+
+Создание и проверка подписи происходят на стороне пользователя. При использовании КриптоПро ЭЦП Browser plug-in, можно добавлять подпись к подписываемым данным (присоединенная ЭП) или создавать ее отдельно (отделенная ЭП).
+
+КриптоПро ЭЦП Browser plug-in распространяется бесплатно в соответствии с лицензионным соглашением.
+
+КриптоПро ЭЦП Browser plug-in просто интегрируется и применяется в современных браузерах с поддержкой сценариев JavaScript, таких как:
+
+* Яндекс.Браузер.
+* Internet Explorer.
+* Microsoft Edge (на базе Chromium версии 104+).
+* Mozilla Firefox.
+* Google Chrome (в том числе Chromium-Gost. На базе Chromium версии 104+).
+* Apple Safari.
+* Opera.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+При использовании браузеров на основе Chromium для стабильной работы браузерного расширения рекомендуется обновить браузер до последней версии (104+). 
+Причина описана на форуме сайта КриптоПро (https://www.cryptopro.ru/forum2/default.aspx?g=posts&m=134998#post134998).
+|===
+====
+
+Плагин поддерживается на различных операционных системах, включая:
+
+* Microsoft Windows (инструкция по установке в п.п. 1.1.2.1).
+* Linux (инструкция по установке в п.п. 1.1.2.2).
+* Apple macOS (инструкция по установке в п.п. 1.1.2.3).
+
+КриптоПро ЭЦП Browser plug-in позволяет подписывать различные типы данных, включая электронные документы, данные веб-форм, файлы, загруженные с компьютера пользователя, текстовые сообщения и другие.
+
+=== Процесс работы с КриптоПро ЭЦП Browser plug-in
+
+==== Установка КриптоПро CSP
+
+Для создания и проверки электронных подписей по алгоритмам ГОСТ обязательно требуется установка КриптоПровайдера, поддерживающего стандарты ГОСТ. Рекомендуется использовать КриптоПро CSP, чтобы обеспечить корректную работу плагина. Скачать КриптоПро CSP можно с официального сайта.
+
+КриптоПровайдер КриптоПро CSP устанавливается на ПК пользователя локально. Он подписывает документы, обращаясь к сертификату электронной подписи в реестре компьютера, на eToken или RuToken («флешка» для хранения УКЭП), смарт-картах и других носителях.
+
+Установка производится с дистрибутива, полученного с сайта «КриптоПро» (https://cryptopro.ru/). Для того чтобы скачать дистрибутив необходимо: 
+
+. Запустить интернет-обозреватель двойным нажатием левой кнопки мыши на его ярлыке на рабочем столе или нажать кнопку «Пуск» и в открывшемся меню выбрать пункт, соответствующий интернет-обозревателю.
+. В адресной строке интернет-обозревателя ввести адрес: https://cryptopro.ru/products/csp
+. Откроется станица с сайта с сайта «КриптоПро» для скачивания и установки (1) КриптоПро CSP, как на <<id_image-g_dr_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_pp_1]]
+.Рисунок {counter:figure-number}. Страница сайта «КриптоПро»
+image::g_pp_1.png[{image-size}, align="center"]
+
+На странице прописаны минимальный набор действий для начала работы с электронной подписью. На данный момент для возможности скачать КриптоПро CSP по требованиям законодательства необходимы идентификационные данные – потребуется пройти простую регистрацию на сайте «КриптоПро»
+На странице также представлены подробные инструкции как установить КриптоПро на различные виды операционных систем, как на <<id_image-g_cp_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_сp_2]]
+.Рисунок {counter:figure-number}. Блок с инструкциями
+image::g_cp_2.png[{image-size}, align="center"]
+
+Ссылки на официальную инструкцию по установке КриптоПро СSP:
+
+. Windows: https://cryptopro.ru/sites/default/files/docs/csp/50r2/%D0%96%D0%A2%D0%AF%D0%98.00101-02%2092%2001.%20%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E.%20Windows.pdf[]
+. macOS: https://support.cryptopro.ru/index.php?/Knowledgebase/Article/View/232/0/rbot-s-kriptopro-csp-v-macos[]
+. Linux: https://support.cryptopro.ru/index.php?/Knowledgebase/Article/View/390/0/rbot-s-kriptopro-csp-v-linux-n-primere-debian-11[]
+
+Важно ознакомиться с инструкцией по установке дистрибутива КриптоПро CSP, чтобы избежать возможных ошибок. Рекомендуется всем пользователям обратиться к инструкциям при возникновении вопросов. Это поможет снизить вероятность проблем и обеспечит успешную установку программного обеспечения. Инструкция содержит подробное описание процесса установки, включая необходимые компоненты, настройки и рекомендации. 
+
+Для установки КриптоПро CSP пользователю нужно запустить файл дистрибутива CSPSetup.exe. и следовать указаниям на экране или инструкции.
+
+Если по каким-либо причинам ссылка, представленная выше, не работает, то возможен альтернативный путь:
+
+. Перейдите на официальный веб-сайт КриптоПро (https://www.cryptopro.ru) и найдите раздел продукты (1) или скачать (2), как на <<id_image-g_cp_3, Рисунке {counter:figure-number}>>.
+. В разделе необходимо выбрать КриптоПро CSP.
+. Далее необходимо выбрать соответствующую версию для операционной системы (Windows, Linux и т. д.), после чего загрузить установочный файл. Возможно, перед этим потребуется пройти регистрацию на сайте или выполнить авторизацию, если вы уже ранее регистрировались.
+. После завершения загрузки необходимо запустить установочный файл и следовать инструкциям на экране. Убедитесь, что у вас есть права администратора для установки программного обеспечения.
+. Во время установки может потребоваться выбор компонентов, которые вы хотите установить. Внимательно прочитайте описания компонентов и выберите те, которые необходимы. Обычно установка включает базовые компоненты, драйверы и инструменты для работы с сертификатами и криптографией.
+. Продолжайте установку, следуя указаниям на экране. При необходимости выберите путь установки и настройки по умолчанию или настройте их в соответствии с вашими требованиями.
+. После завершения установки может потребоваться перезагрузка компьютера. Следуйте указаниям на экране и перезагрузите систему, если это требуется.
+
+[[id_image-g_сp_3]]
+.Рисунок {counter:figure-number}. Меню официального сайта КриптоПро
+image::g_cp_3.png[{image-size}, align="center"]
+
+==== Установка КриптоПро ЭЦП Browser plug-in
+Плагин обеспечивает взаимодействие между веб-страницами вашего браузера и КриптоПровайдером в операционной системе. Он позволяет создавать и проверять электронные подписи прямо на веб-страницах. Для корректной установки рекомендуется воспользоваться инструкцией, предоставленной на официально сайте КриптоПро:
+
+* Установка КриптоПро ЭЦП Browser plug-in в Windows – https://docs.cryptopro.ru/cades/plugin/plugin-installation-windows.
+* Установка КриптоПро ЭЦП Browser plug-in в *nix – https://docs.cryptopro.ru/cades/plugin/plugin-installation-unix.
+* Установка КриптоПро ЭЦП Browser plug-in в Apple macOS – https://docs.cryptopro.ru/cades/plugin/plugin-installation-macos.
+
+Инструкции приведены для удобства также ниже без изменений, согласно информации, представленной на официальном сайте КриптоПро.
+
+===== Установка КриптоПро ЭЦП Browser plug-in в Windows
+
+Для корректного функционирования веб-страниц, использующих КриптоПро ЭЦП Browser plug-in, недостаточно расширения для браузера. Сначала необходимо скачать установочный файл и установить его, соблюдая настоящее руководство пользователя.
+
+Для работы плагина требуется установленный КриптоПро CSP версии 4.0 и выше.
+
+Дистрибутив и инструкцию по установке можно получить на сайте https://cryptopro.ru/products/csp.
+
+* Скачайте программу установки. КриптоПро ЭЦП Browser plug-in доступен по https://www.cryptopro.ru/products/cades/plugin/get_2_0
+* Запустите исполняемый файл cadesplugin.exe, как на <<id_image-g_cp_4, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_сp_4]]
+.Рисунок {counter:figure-number}. Исполняемый файл
+image::g_cp_4.png[{image-size3}, align="center"] 
+* Подтвердите установку КриптоПро ЭЦП Browser plug-in, как на <<id_image-g_cp_5, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_сp_5]]
+.Рисунок {counter:figure-number}. Установка
+image::g_cp_5.png[{image-size2}, align="center"] 
+* Если потребуется, разрешите КриптоПро ЭЦП Browser plug-in внести изменения путем нажатия кнопки «Да», как на <<id_image-g_cp_6, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_сp_6]]
+.Рисунок {counter:figure-number}. Выдача разрешения
+image::g_cp_6.png[{image-size1}, align="center"]  
+* Дождитесь окончания установки КриптоПро ЭЦП Browser plug-in, как на <<id_image-g_cp_7, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_сp_7]]
+.Рисунок {counter:figure-number}. Цикл установки
+image::g_cp_7.png[{image-size2}, align="center"]   
+* После окончания установки КриптоПро ЭЦП Browser plug-in нажмите ОК, как на <<id_image-g_cp_8, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_сp_8]]
+.Рисунок {counter:figure-number}. Подтверждение установки
+image::g_cp_8.png[{image-size2}, align="center"]   
+
+Дальнейшие настройки различаются в зависимости от используемого браузера.
+
+Браузер Chrome (Chromium Edge, Chromium Gost): запустите браузер и дождитесь оповещения об установленном расширении «CryptoPro Extension for CAdES Browser Plug-in». Включите это расширение. Если на компьютере ранее уже выполнялась установка расширения CryptoPro Extension for CAdES Browser Plug-in, а потом оно был удалено или вы используете Chromium Edge, его потребуется установить отдельно. Для этого перейдите по адресу https://chrome.google.com/webstore/detail/cryptopro-extension-for-c/iifchhfnnmpdbibifmljnfjhpififfog и установите расширение из интернет-магазина Chrome, как на <<id_image-g_cp_9, Рисунке {counter:figure-number}>>.
+Убедитесь, что расширение включено на странице расширений, как на <<id_image-g_cp_10, Рисунке {counter:figure-number}>>.
+
+
+[[id_image-g_сp_9]]
+.Рисунок {counter:figure-number}. Включение расширения
+image::g_cp_9.png[{image-size1}, align="center"]    
+
+[[id_image-g_сp_10]]
+.Рисунок {counter:figure-number}. Активация расширения
+image::g_cp_10.png[{image-size}, align="center"]  
+
+Браузер Opera или Яндекс.Браузер: расширение доступно по адресу https://addons.opera.com/ru/extensions/details/cryptopro-extension-for-cades-browser-plug-in/ , как на <<id_image-g_cp_11, Рисунке {counter:figure-number}>>.
+[[id_image-g_сp_11]]
+.Рисунок {counter:figure-number}. Расширение Opera или Яндекс.Браузер
+image::g_cp_11.png[{image-size}, align="center"]  
+
+Браузер Firefox: скачайте расширение по адресу https://www.cryptopro.ru/sites/default/files/products/cades/extensions/firefox_cryptopro_extension_latest.xpi и установите в браузер самостоятельно, как на <<id_image-g_cp_12, Рисунке {counter:figure-number}>>.
+[[id_image-g_сp_12]]
+.Рисунок {counter:figure-number}. Расширение Firefox
+image::g_cp_12.png[{image-size}, align="center"]  
+
+Браузер Microsoft Internet Explorer: не требуется дополнительных настроек.
+
+Проверьте корректность установки на странице проверки плагина https://www.cryptopro.ru/sites/default/files/products/cades/demopage/cades_bes_sample.html.
+
+Для этого в открывшемся окне подтвердите доступ путем нажатия кнопки «Да», как на <<id_image-g_cp_13, Рисунке {counter:figure-number}>>.
+[[id_image-g_сp_13]]
+.Рисунок {counter:figure-number}. Проверка корректности установки плагина
+image::g_cp_13.png[{image-size1}, align="center"]   
+
+Если установка КриптоПро ЭЦП Browser plug-in прошла успешно, появится окно с надписью «Плагин загружен», как на <<id_image-g_cp_14, Рисунке {counter:figure-number}>> , с указанием его версии и используемой Вами версии КриптоПро CSP.
+
+[[id_image-g_сp_14]]
+.Рисунок {counter:figure-number}. Плагин загружен
+image::g_cp_14.png[{image-size1}, align="center"] 
+
+===== Установка КриптоПро ЭЦП Browser plug-in в *nix
+
+Для работы КриптоПро ЭЦП Browser plug-in требуется установленный КриптоПро CSP версии 4.0 и выше. Дистрибутив и инструкцию по установке можно получить по адресу http://cryptopro.ru/products/csp/overview.
+
+Для работы КриптоПро ЭЦП Browser plug-in обязательна установка пакетa cprocsp-rdr-gui-gtk и отсутствие установленного пакета cprocsp-rdr-gui.
+
+. Скачайте и распакуйте архив с КриптоПро ЭЦП Browser plug-in. Архивы можно скачать по адресу https://www.cryptopro.ru/products/cades/plugin/get_2_0.
+
+. Установите пакеты cprocsp-pki-cades и cprocsp-pki-plugin из архива. При использовании некоторых 64-битных версий КриптоПро CSP для rpm дистрибутивов потребуется указать флаг --nodeps
+
+Дальнейшие настройки различаются в зависимости от используемого браузера.
+
+Браузер Chrome (Chromium Edge, Chromium Gost): запустите браузер и дождитесь оповещения об установленном расширении «CryptoPro Extension for CAdES Browser Plug-in». Включите это расширение. Если на компьютере ранее уже выполнялась установка расширения CryptoPro Extension for CAdES Browser Plug-in, а потом оно был удалено или вы используете Chromium Edge, его потребуется установить отдельно. Для этого перейдите по адресу https://chrome.google.com/webstore/detail/cryptopro-extension-for-c/iifchhfnnmpdbibifmljnfjhpififfog и установите расширение из интернет-магазина Chrome, как на <<id_image-g_cp_15, Рисунке {counter:figure-number}>>. Убедитесь, что расширение включено на странице расширений, как на <<id_image-g_cp_16, Рисунке {counter:figure-number}>>
+
+[[id_image-g_сp_15]]
+.Рисунок {counter:figure-number}. Включение расширения
+image::g_cp_15.png[{image-size2}, align="center"] 
+
+[[id_image-g_сp_16]]
+.Рисунок {counter:figure-number}. Активация расширения
+image::g_cp_16.png[{image-size}, align="center"] 
+
+Браузер Opera или Яндекс.Браузер: расширение доступно по адресу https://addons.opera.com/ru/extensions/details/cryptopro-extension-for-cades-browser-plug-in/ , как на <<id_image-g_cp_17, Рисунке {counter:figure-number}>>.
+[[id_image-g_сp_17]]
+.Рисунок {counter:figure-number}. Расширение Opera или Яндекс.Браузер
+image::g_cp_17.png[{image-size}, align="center"] 
+
+Браузер Firefox: скачайте расширение по адресу https://www.cryptopro.ru/sites/default/files/products/cades/extensions/firefox_cryptopro_extension_latest.xpi и установите в браузер самостоятельно, как на <<id_image-g_cp_18, Рисунке {counter:figure-number}>>.
+[[id_image-g_сp_18]]
+.Рисунок {counter:figure-number}. Расширение Firefox
+image::g_cp_18.png[{image-size}, align="center"] 
+
+Браузер Microsoft Internet Explorer: не требуется дополнительных настроек.
+
+Проверьте корректность установки на странице проверки плагина https://www.cryptopro.ru/sites/default/files/products/cades/demopage/cades_bes_sample.html.
+
+Для этого в открывшемся окне подтвердите доступ путем нажатия кнопки «Да», как на <<id_image-g_cp_19, Рисунке {counter:figure-number}>>.
+[[id_image-g_сp_19]]
+.Рисунок {counter:figure-number}. Проверка корректности установки плагина
+image::g_cp_19.png[{image-size1}, align="center"]  
+
+Если установка КриптоПро ЭЦП Browser plug-in прошла успешно, появится окно с надписью «Плагин загружен», как на <<id_image-g_cp_20, Рисунке {counter:figure-number}>>, с указанием его версии и используемой Вами версии КриптоПро CSP.
+
+[[id_image-g_сp_20]]
+.Рисунок {counter:figure-number}. Плагин загружен
+image::g_cp_20.png[{image-size1}, align="center"]  
+
+===== Установка КриптоПро ЭЦП Browser plug-in в Apple macOS
+
+Начиная с версии КриптоПро CSP 5.0.12600 Quinotaur (https://www.cryptopro.ru/forum2/default.aspx?g=posts&m=137019#post137019) КриптоПро ЭЦП Browser Plugin вошёл в состав КриптоПро CSP 5.0 ( https://cryptopro.ru/products/csp/downloads). Инструкция для установки более ранних версий доступна по адресу https://docs.cryptopro.ru/cades/plugin/plugin-installation-macos-obsolete.
+
+Установить КриптоПро ЭЦП Browser Plugin из объединённого дистрибутива (https://cryptopro.ru/products/csp/downloads).
+
+Дальнейшие настройки различаются в зависимости от используемого браузера.
+
+Браузер Chrome (Chromium Edge, Chromium Gost): запустите браузер и дождитесь оповещения об установленном расширении «CryptoPro Extension for CAdES Browser Plug-in». Включите это расширение. Если на компьютере ранее уже выполнялась установка расширения CryptoPro Extension for CAdES Browser Plug-in, а потом оно был удалено или вы используете Chromium Edge, его потребуется установить отдельно. Для этого перейдите по адресу https://chrome.google.com/webstore/detail/cryptopro-extension-for-c/iifchhfnnmpdbibifmljnfjhpififfog и установите расширение из интернет-магазина Chrome, как на <<id_image-g_cp_21, Рисунке {counter:figure-number}>>. Убедитесь, что расширение включено на странице расширений, как на <<id_image-g_cp_22, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_сp_21]]
+.Рисунок {counter:figure-number}. Включение расширения
+image::g_cp_21.png[{image-size2}, align="center"]  
+
+[[id_image-g_сp_22]]
+.Рисунок {counter:figure-number}. Активация расширения
+image::g_cp_22.png[{image-size}, align="center"]  
+
+Браузер Opera или Яндекс.Браузер: расширение доступно по адресу https://addons.opera.com/ru/extensions/details/cryptopro-extension-for-cades-browser-plug-in/ , как на <<id_image-g_cp_23, Рисунке {counter:figure-number}>> .
+[[id_image-g_сp_23]]
+.Рисунок {counter:figure-number}. Расширение Opera или Яндекс.Браузер
+image::g_cp_23.png[{image-size}, align="center"]  
+
+Браузер Firefox: скачайте расширение по адресу https://www.cryptopro.ru/sites/default/files/products/cades/extensions/firefox_cryptopro_extension_latest.xpi и установите в браузер самостоятельно, как на <<id_image-g_cp_24, Рисунке {counter:figure-number}>> .
+[[id_image-g_сp_24]]
+.Рисунок {counter:figure-number}. Расширение Firefox
+image::g_cp_24.png[{image-size}, align="center"]  
+
+Браузер Microsoft Internet Explorer: не требуется дополнительных настроек.
+
+Проверьте корректность установки на странице проверки плагина https://www.cryptopro.ru/sites/default/files/products/cades/demopage/cades_bes_sample.html.
+
+Для этого в открывшемся окне подтвердите доступ путем нажатия кнопки «Да», как на <<id_image-g_cp_25, Рисунке {counter:figure-number}>> .
+[[id_image-g_сp_25]]
+.Рисунок {counter:figure-number}. Проверка корректности установки плагина
+image::g_cp_25.png[{image-size}, align="center"] 
+
+Если установка КриптоПро ЭЦП Browser plug-in прошла успешно, появится окно с надписью «Плагин загружен», как на <<id_image-g_cp_26, Рисунке {counter:figure-number}>> , с указанием его версии и используемой Вами версии КриптоПро CSP.
+
+[[id_image-g_сp_26]]
+.Рисунок {counter:figure-number}. Плагин загружен
+image::g_cp_26.png[{image-size}, align="center"] 
+
+==== Проверка работы установленного плагина
+
+Для проверки работы плагина необходимо перейти на страницу проверки работы КриптоПро ЭЦП Browser plug-in https://cryptopro.ru/sites/default/files/products/cades/demopage/cades_bes_sample.html .
+
+Следуя указаниям демо-страницы, выберите сертификат подписи, введите данные, которые нужно подписать, и нажмите «Подписать». После успешного подписания отобразятся данные о сертификате, как на <<id_image-g_cp_27, Рисунке {counter:figure-number}>>.
+[[id_image-g_сp_27]]
+.Рисунок {counter:figure-number}. Успешно сформированная подпись
+image::g_cp_27.png[{image-size1}, align="center"] 

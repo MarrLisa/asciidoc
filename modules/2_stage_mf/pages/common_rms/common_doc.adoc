@@ -1,0 +1,25 @@
+include::../common/contract.adoc[]
+// Указать данные rms
+:rms: {nbsp}
+:data_applic_1_start: {start_period}
+:data_applic_1_end: {end_period}
+//Указать ФТ и ркраткий результат для отчета
+:ft: {nbsp}
+:completed_work: {nbsp}
+//Указать работы для таблиицы трудозатрат
+//;;;;;;;
+:work-1: {nbsp}                                           
+:work-2: {nbsp}                                          
+:work-3: {nbsp}                                           
+:work-4: {nbsp}
+:work-5: {nbsp}
+:work-6: {nbsp}
+:work-7: {nbsp}      
+:work-all: {nbsp}    
+//;;;;;;;
+// не изменять
+:date_rms: 
+:plan: 
+:plana: Договора {state_сontract}
+:po_planu: Договору {state_сontract}
+:name5_dokument: {nbsp}

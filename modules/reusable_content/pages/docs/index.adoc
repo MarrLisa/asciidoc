@@ -1,0 +1,8 @@
+= Руководства пользователя
+:navtitle: Документация
+:docinfo: shared
+
+// этот файл для сайта с Антора, пока не актуально
+
+* xref:user_guide_chief_administrator.adoc[Руководство пользователя. Главный распорядитель бюджетных средств]
+// * xref:user_guide_chief_administrator.adoc[Руководство пользователя. Участник]

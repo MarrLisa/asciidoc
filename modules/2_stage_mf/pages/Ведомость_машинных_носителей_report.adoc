@@ -1,0 +1,51 @@
+include::common/contract.adoc[]
+:docinfo: shared
+:!chapter-signifier:
+:!section-refsig:
+:table-caption!: 
+:section-refsig: разделе
+:toc: macro
+:toc-title: Содержание 
+:name1_dokument: Ведомость машинных носителей информации
+:sectnumlevels: 7
+// Кол-во страниц соответствует пдф и версия
+:version: 1
+:page_all: 22
+:code: ТЗ-02
+:toclevels: 4
+:ramka: 2
+:plan:
+
+// eee
+[.my-bold-title]
+{name1_dokument}
+
+[.append-name-style]
+Договор {сontract_number} ({stage} этап) +     
+Государственный контракт {state_сontract})
+
+{nbsp}
+
+:!t_row:
+
+
+[%breakable, cols="1,9,1,5" options="header"]
+|===
+^| № п/п  ^| Наименование материалов    ^| Кол-во экз. ^| Форма представления 
+4+| Государственная интегрированная информационная система управления общественными финансами «Электронный бюджет»
+4+| Подсистема управления расходами
+4+| Модуль организации предоставления в электронном виде мер государственной финансовой поддержки юридическим лицам, индивидуальным предпринимателям, а также физическим лицам – производителям товаров, работ, услуг
+//-----------------------
+ 
+include::tables/t_machine_media_statement.adoc[]
+
+|===
+
+
+:!t_row:
+
+{nbsp}
+
+include::tables/titul_report.adoc[tag=titul_start_utv2]
+
+:rms: 0

@@ -1,0 +1,65 @@
+:table-caption!: 
+:figure-caption!:
+:doctype: book
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:pdf-page-layout: landscape
+:docinfo: shared
+// :manual1: РП1 надо установить в кажждом РП со своим порядковым номером
+
+// Таблицы с описанием ошибок системы
+// используется во всех РП 
+
+== Описание ошибок Системы, возникающих при работе с Порталом
+
+Перечень возможных ошибок и действия для исправления ошибок представлен в <<id_table_t_mistake_1, Таблице {counter:table-number}>>.
+
+[[id_table_t_mistake_1]]
+.Таблица {counter:table-number}. Ошибки и необходимые действия для устранения
+
+ifdef::manual1[include::../tables/t_mistake_1.adoc[]]
+
+ifdef::manual2[include::../tables/t_mistake_2.adoc[]]
+
+ifdef::manual3[include::../tables/t_mistake_3.adoc[]]
+
+ifdef::manual4[include::../tables/t_mistake_4.adoc[]]
+
+ifdef::manual5[include::../tables/t_mistake_5.adoc[]]
+
+ifdef::manual6[include::../tables/t_mistake_5.adoc[]]
+
+ifdef::manual7[include::../tables/t_mistake_6.adoc[]]
+
+ifdef::manual8[include::../tables/t_mistake_7.adoc[]]
+
+ifdef::manual9[include::../tables/t_mistake_8.adoc[]]
+
+ifdef::manual10[include::../tables/t_mistake_9.adoc[]]
+
+ifdef::manual11[include::../tables/t_mistake_9.adoc[]]
+
+ifdef::manual12[include::../tables/t_mistake_10.adoc[]]
+
+ifdef::manual13[include::../tables/t_mistake_11.adoc[]]
+
+ifdef::manual14[include::../tables/t_mistake_12.adoc[]]
+
+ifdef::manual15[include::../tables/t_mistake_13.adoc[]]
+
+ifdef::manual16[include::../tables/t_mistake_14.adoc[]]
+
+ifdef::manual17[include::../tables/t_mistake_15.adoc[]]
+
+ifdef::manual18[include::../tables/t_mistake_3.adoc[]]
+
+ifdef::manual19[include::../tables/t_mistake_5.adoc[]]
+
+ifdef::manual20[include::../tables/t_mistake_7.adoc[]]
+
+ifdef::manual21[include::../tables/t_mistake_8.adoc[]]
+
+ifdef::manual22[include::../tables/t_mistake_4.adoc[]]
+
+ifdef::manual23[include::../tables/t_mistake_9.adoc[]]
+

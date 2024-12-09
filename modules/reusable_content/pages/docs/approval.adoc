@@ -1,0 +1,40 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Для проверки отображения под каждую из ролей
+// :role1:
+// :role2:
+
+// Согласование субсидии и отбора в зависимости от того какая роль стоит в списке директив
+// Используется в РП1 и РП2 под разными заголовками
+// Содержит в себе инклюды approval_1.adoc и approval_3.adoc
+// Содержит маяк approval_1 на который есть ссылка из файлов delete_otb.adoc и modification_otb.adoc (РП2 и РП17)
+
+// Отображение для Главного распорядителя бюджетных средств
+ifdef::role1[]
+=== Согласование субсидии
+endif::[]
+
+// Отображение для Организатора отборов
+ifdef::role2[]
+[[approval_1]]
+=== Согласование, утверждение и публикация отбора
+endif::[]
+
+// Общая часть перед согласованием, все что происходит на Портале (формирование и отправка)
+include::approval_1.adoc[]
+
+//МФ приняло решение, что теперь отображаем только скрины где у юарса все проходит, они отражены в документе approval_1.adoc, поэтому include::approval_2.adoc[] неактуально(содержит инструкцию от барс)
+//include::approval_2.adoc[]
+
+// Общая часть после согласования, Итоги согласования
+include::approval_3.adoc[]

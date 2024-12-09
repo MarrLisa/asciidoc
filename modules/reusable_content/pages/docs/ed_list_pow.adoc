@@ -1,0 +1,21 @@
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:image-default-align: center
+:doctype: book
+:sectnums:
+:xrefstyle: full
+:section-refsig: разделе
+include::master_text.adoc[]
+:docinfo: shared
+
+== Перечень полномочий в государственной интегрированной информационной системе управления общественными финансами «Электронный бюджет», используемых в Модуле
+
+В соответствии с полномочиями, которые выдаются в Государственной интегрированной информационной системе в Модуле, выдается роль и доступы к административным реестрам, роли и доступы указаны в <<id_table_t_ed_list_pow, Таблице {counter:table-number}>>.
+
+[[id_table_t_ed_list_pow]]
+.Таблица {counter:table-number}. Перечень ролей и доступов в Модуле
+include::../tables/t_ed_list_pow.adoc[]

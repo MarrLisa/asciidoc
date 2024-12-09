@@ -1,0 +1,92 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+
+// Описание реестра "Отборы по социальному заказу"
+// используется в 17 рп, copy_otb, modification_otb, protocol_summery_cz
+
+=== {otbory_cz}
+
+Все сформированные отборы отображаются в реестре {otbory_cz}. 
+Чтобы перейти в реестр необходимо на «Рабочей панели» нажать на раздел {otbory_cz}, как на <<id_image-g_o_cz_1, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_o_cz_1]]
+.Рисунок {counter:figure-number}. Переход в раздел {otbory_cz} из рабочей панели
+image::g_o_cz_1.png[{image-size}, align="center"]
+
+Также перейти в раздел можно из раздела {social_services} воспользовавшись скрытым меню с кнопками быстрого перехода между реестрами, как на <<id_image-g_o_cz_2, Рисунке {counter:figure-number}>>.
+
+[[id_image-g_o_cz_2]]
+.Рисунок {counter:figure-number}. Переход в раздел {otbory_cz} из реестра {social_services}, через панель управления
+image::g_o_cz_2.png[{image-size}, align="center"]
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}info.png[16,16] |
+Для перехода к отборам, ограниченным определенной услугой, необходимо в реестре {social_services} воспользоваться кнопкой в строке услуги «К отборам».
+После нажатия откроется раздел {otbory_cz} с примененным фильтром по услуге.
+|===
+====
+
+После перехода откроется страница раздела {otbory_cz}. В данном разделе представлен реестр отборов, к которым у пользователя назначен доступ.
+Страница раздела {otbory_cz} организована следующим образом, как на <<id_image-g_o_cz_3, Рисунке {counter:figure-number}>>:
+
+. {hidden_menu} (1). 
+. {budget_filter} (2).
+. {buttons_panel} (3):
+* {column_selection}
+* {update_data}
+* {share_link}
+* {upload_excel}
+. {otb_list_table} (4) {filter_sort}.
+. {page_nav} (5).
+. {registry_template} (6) (подробнее о работе с шаблонами описано в xref:template_reestr.adoc#template_reestr[xrefstyle=full]):
+* {add_template}
+* {save_template}
+* {manage_template}
+ 
+[[id_image-g_o_cz_3]]
+.Рисунок {counter:figure-number}. Страница раздела {otbory_cz}
+image::g_o_cz_3.png[{image-size}, align="center"]
+
+{otb_list_table} состоит из следующих колонок:
+
+. {fixed_columns}:
+.. {num_otb}.
+.. {but_setting_otb}.
+.. {but_delete_otb}.
+.. {but_copy_otb}.
+.. {but_ss}.
+. {scroll_columns}: 
+.. {name_otb}, , задаётся при настройках в разделе {general_setting}.
+.. {name_ss}, подробнее об этом расписано в xref:otbor_new.adoc#otbor_new[xrefstyle=full] настоящего руководства пользователя.
+.. «Информация по услугам» – колонка содержит кнопку «Подробнее», при нажатии на которую открывается модальное окно со списком услуг, связанных с выбранным отбором. Каждая услуга представлена в виде отдельной строки, содержащей дополнительную информацию о ней, как на <<id_image-g_o_cz_4, Рисунке {counter:figure-number}>>.
+.. «Организатор» – отображает наименование организатора отбора, которое берется из настроек отбора.
+.. «Статус отбора» – может быть: {st_draf}, {st_published}, {st_on_hold}, {st_done}, {st_cancelled}, {st_failed}, отображает текущий статус отбора вне зависимости от версии.
+.. «Статус версии отбора» – статус версии, формируется в статусе {st_draf}, возможны статусы: {st_in_review}, {st_rejected}, {st_approved}, {st_published};
+.. «Тип конкурса» – указывает тип конкурса, в котором может быть один этап, два этапа с предложениями по критериям или два этапа с предложениями о величине значимости критериев. В данный момент доступен только одноэтапный конкурс.
+.. «Тип субъекта экономической деятельности» – отображает тип субъекта экономической деятельности, который задается в настройках отбора в {otbor_section} в подразделе {profile_otb_info} в поле «Тип заявителей».
+.. «Ключевые даты» – при раскрытии отображаются колонки с началом и окончанием приема, началом и окончанием рассмотрения и началом и окончанием оценки. Даты и время в формате ДД.ММ.ГГГГ ЧЧ: ММ. Задаются в настройках отбора.
+.. «Заявки» – при раскрытии отображаются колонки с поступившими, допущенными и победившими заявками.
+.. {num_v_otb}.
+.. «Дата последней смены статуса» – Дата и время в формате ДД.ММ.ГГГГ ЧЧ: ММ.
+.. {last_modified}.
+
+[[id_image-g_o_cz_4]]
+.Рисунок {counter:figure-number}. Информация по услугам
+image::g_o_cz_4.png[{image-size}, align="center"]
+
+{search_filter}, как показано на <<id_image-g_o_cz_5, Рисунке {counter:figure-number}>>: 
+
+[[id_image-g_o_cz_5]]
+.Рисунок {counter:figure-number}. Поля поиска/фильтрации по значению колонок
+image::g_o_cz_5.png[{image-size}, align="center"]

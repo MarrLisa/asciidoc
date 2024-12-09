@@ -1,0 +1,20 @@
+[cols="2,2,2,5,3", options="header"]
+|===
+^| Сущность (Таблица)      ^| Атрибут                  ^| Тип данных   ^| Описание                                           ^| Связь с другими сущностями                         
+5+| [.my-bold-table]#Схема identity#                                                      
+| User                    | Id                       | UUID/GUID    | Уникальный идентификатор пользователя (PK)         | UserProfile, UserUniqueOrganizations, Person       
+.2+| UserUniqueOrganizations | Id                       | Integer/UUID | Уникальный идентификатор записи (PK)               | User, UniqueOrganization (не представлена на схеме)
+                         | FK1_UniqueOrganizationId | UUID/GUID    | ID уникальной организации (FK)                     | UniqueOrganization (не представлена на схеме)      
+5+| [.my-bold-table]#Схема unit#                                                         
+.2+| UserProfile             | Id                       | UUID/GUID    | Уникальный идентификатор профиля пользователя (PK) | User, Person, Organization, UserProfileRole        
+                         | FK1_UserId               | UUID/GUID    | ID пользователя (FK)                               | User                                               
+.3+| Person                  | Id                       | UUID/GUID    | Уникальный идентификатор физического лица (PK)     | UserProfile                                        
+                         | FK1_ProfileId            | UUID/GUID    | ID профиля пользователя (FK)                       | UserProfile                                        
+                         | FK2_UserId               | UUID/GUID    | ID пользователя (FK)                               | User                                               
+| Organization            | Id                       | UUID/GUID    | Уникальный идентификатор организации (PK)          | UserProfile, AccessTree                            
+| Схема access            |                          |              |                                                    |                                                    
+.2+| AccessTree              | Id                       | Integer/UUID | Уникальный идентификатор записи о доступе (PK)     |                                                    
+                         | FK1_IdentityId           | UUID/GUID    | ID профиля пользователя или организации (FK)       | UserProfile, Organization                          
+.2+| UserProfileRole         | Id                       | Integer/UUID | Уникальный идентификатор записи (PK)               |                                                    
+                         | FK1_UserProfileId        | UUID/GUID    | ID профиля пользователя (FK)                       | UserProfile                                        
+|===

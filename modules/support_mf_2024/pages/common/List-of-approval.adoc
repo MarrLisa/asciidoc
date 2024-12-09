@@ -1,0 +1,32 @@
+include::__period.adoc[]
+:figure-caption: Рисунок
+:table-caption: Таблица
+// :toc-title: Содержание
+:imagesdir: ../images
+:doctype: book
+
+[cols="1",frame=none,grid=none]
+[width=100%]
+|===
+^|
+//^|[.my-bold-title]#ЛИСТ СОГЛАСОВАНИЯ#
+^|*ИСПОЛНИТЕЛИ*
+|
+|===
+
+[frame=all,grid=all]
+[cols="25%, 25%, 25%, 15%, 10%", options="header"]
+|===
+^|Наименование организации 
+^|Должность            
+^|Фамилия и инициалы 
+^|Подпись 
+^|Дата
+|Общество с ограниченной ответственностью +
+{company}           
+|{dolsnost_isp}
+|{fio}        
+|     
+|
+|===
+

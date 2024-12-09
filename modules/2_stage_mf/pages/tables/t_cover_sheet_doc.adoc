@@ -1,0 +1,21 @@
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-2709  | trd_rms_10_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-2135  | trd_rms_11_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.03.24 № RMS-114  | trd_rms_1_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-125  | trd_rms_2_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-135  | trd_rms_3_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-1426  | trd_rms_4_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-2140  | trd_rms_5_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-2179  | trd_rms_6_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-2194  | trd_rms_7_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-2707  | trd_rms_8_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Частное техническое задание». План-задание от 27.11.2024 № RMS-2708  | trd_rms_9_terms_of_reference.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Общее частное техническое задание».   | Общее_частное_техническое_задание_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Описание автоматизируемых функций».   | Описание_автоматизируемых_функций_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Описание информационного обеспечения».   | Описание_информационного_обеспечения_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Описание комплекса технических средств».   | Описание_комплекса_технических_средств_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Описание организации информационной базы».   | Описание_организации_информационной_базы_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Описание постановки задачи».   | Описание_постановки_задачи_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Пояснительная записка к техническому проекту».   | Пояснительная_записка_к_тех_проекту_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Технический проект на информационно-телекоммуникационную инфраструктуру».   | Тех_проект_на_ИТ_инфраструктуру_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Технические требования к информационно-телекоммуникационной инфраструктуре».   | Тех_требования_к_ИТ_инфраструктуре_trd.pdf  
+|  ^|[.table-style-center]#{counter:t_row}.# | Документ «Требования к информационному взаимодействию с внешними информационными системами».   | Требования_к_инф_взаимодействию_trd.pdf  

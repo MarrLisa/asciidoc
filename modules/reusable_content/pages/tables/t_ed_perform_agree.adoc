@@ -1,0 +1,8 @@
+[options="header"]
+[%autowidth]
+:docinfodir: ../docs
+:docinfo: shared
+:iconsdir: ../icons/
+include::../docs/master_text.adoc[]
+
+^|  ^| 

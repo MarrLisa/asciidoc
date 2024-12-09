@@ -1,0 +1,183 @@
+// ------------------1
+include::rms_1_common.adoc[] 
+:rms_1: {rms}
+:ft_1: {ft}
+:completed_work_1: {completed_work}
+:plan_1: {plan}
+:data_11: {data_applic_1_start}
+:data_12: {data_applic_1_end}
+:work-11:   {work-1}                                     
+:work-12:   {work-2}                                       
+:work-13:   {work-3}                                      
+:work-14:   {work-4}
+:work-15:   {work-5}
+:work-16:   {work-6}
+:work-17:   {work-7}
+:work-1all: {work-all} 
+// ------------------2
+include::rms_2_common.adoc[] 
+:rms_2: {rms}
+:ft_2: {ft}
+:completed_work_2: {completed_work}
+:plan_2: {plan}
+:data_21: {data_applic_1_start}
+:data_22: {data_applic_1_end}
+:work-21:   {work-1}                                         
+:work-22:   {work-2}                                           
+:work-23:   {work-3}                                           
+:work-24:   {work-4}
+:work-25:   {work-5}
+:work-26:   {work-6}
+:work-27:   {work-7}
+:work-2all: {work-all}
+// ------------------3
+include::rms_3_common.adoc[] 
+:rms_3: {rms}
+:ft_3: {ft}
+:completed_work_3: {completed_work}
+:plan_3: {plan}
+:data_31: {data_applic_1_start}
+:data_32: {data_applic_1_end}
+:work-31:   {work-1}                                         
+:work-32:   {work-2}                                           
+:work-33:   {work-3}                                           
+:work-34:   {work-4}
+:work-35:   {work-5}
+:work-36:   {work-6}
+:work-37:   {work-7}
+:work-3all: {work-all}
+
+// ------------------4
+include::rms_4_common.adoc[] 
+:rms_4: {rms}
+:ft_4: {ft}
+:completed_work_4: {completed_work}
+:plan_4: {plan}
+:data_41: {data_applic_1_start}
+:data_42: {data_applic_1_end}
+:work-41:   {work-1}                                         
+:work-42:   {work-2}                                           
+:work-43:   {work-3}                                           
+:work-44:   {work-4}
+:work-45:   {work-5}
+:work-46:   {work-6}
+:work-47:   {work-7}
+:work-4all: {work-all}
+
+// ------------------5
+include::rms_5_common.adoc[] 
+:rms_5: {rms}
+:ft_5: {ft}
+:completed_work_5: {completed_work}
+:plan_5: {plan}
+:data_51: {data_applic_1_start}
+:data_52: {data_applic_1_end}
+:work-51:   {work-1}                                        
+:work-52:   {work-2}                                          
+:work-53:   {work-3}                                          
+:work-54:   {work-4}
+:work-55:   {work-5}
+:work-56:   {work-6}
+:work-57:   {work-7}
+:work-5all: {work-all}
+// ------------------6
+
+include::rms_6_common.adoc[] 
+:rms_6: {rms}
+:ft_6: {ft}
+:completed_work_6: {completed_work}
+:plan_6: {plan}
+:data_61: {data_applic_1_start}
+:data_62: {data_applic_1_end}
+:work-61:   {work-1}                                        
+:work-62:   {work-2}                                          
+:work-63:   {work-3}                                          
+:work-64:   {work-4}
+:work-65:   {work-5}
+:work-66:   {work-6}
+:work-67:   {work-7}
+:work-6all: {work-all}
+
+// ------------------7
+include::rms_7_common.adoc[] 
+:rms_7: {rms}
+:ft_7: {ft}
+:completed_work_7: {completed_work}
+:plan_7: {plan}
+:data_71: {data_applic_1_start}
+:data_72: {data_applic_1_end}
+:work-71:   {work-1}                                        
+:work-72:   {work-2}                                          
+:work-73:   {work-3}                                          
+:work-74:   {work-4}
+:work-75:   {work-5}
+:work-76:   {work-6}
+:work-77:   {work-7}
+:work-7all: {work-all}
+// ------------------8
+
+include::rms_8_common.adoc[] 
+:rms_8: {rms}
+:ft_8: {ft}
+:completed_work_8: {completed_work}
+:plan_8: {plan}
+:data_81: {data_applic_1_start}
+:data_82: {data_applic_1_end}
+:work-81:   {work-1}                                        
+:work-82:   {work-2}                                          
+:work-83:   {work-3}                                          
+:work-84:   {work-4}
+:work-85:   {work-5}
+:work-86:   {work-6}
+:work-87:   {work-7}
+:work-8all: {work-all}
+
+// ------------------9
+include::rms_9_common.adoc[] 
+:rms_9: {rms}
+:ft_9: {ft}
+:completed_work_9: {completed_work}
+:plan_9: {plan}
+:data_91: {data_applic_1_start}
+:data_92: {data_applic_1_end}
+:work-91:   {work-1}                                        
+:work-92:   {work-2}                                          
+:work-93:   {work-3}                                          
+:work-94:   {work-4}
+:work-95:   {work-5}
+:work-96:   {work-6}
+:work-97:   {work-7}
+:work-9all: {work-all}
+// ------------------10
+
+include::rms_10_common.adoc[] 
+:rms_10: {rms}
+:ft_10: {ft}
+:completed_work_10: {completed_work}
+:plan_10: {plan}
+:data_101: {data_applic_1_start}
+:data_102: {data_applic_1_end}
+:work-101:   {work-1}                                        
+:work-102:   {work-2}                                          
+:work-103:   {work-3}                                          
+:work-104:   {work-4}
+:work-105:   {work-5}
+:work-106:   {work-6}
+:work-107:   {work-7}
+:work-10all: {work-all}
+// ------------------ 11
+include::rms_11_common.adoc[] 
+:rms_11: {rms}
+:ft_11: {ft}
+:completed_work_11: {completed_work}
+:plan_11: {plan}
+:data_111: {data_applic_1_start}
+:data_112: {data_applic_1_end}
+:work-111:   {work-1}                                        
+:work-112:   {work-2}                                          
+:work-113:   {work-3}                                          
+:work-114:   {work-4}
+:work-115:   {work-5}
+:work-116:   {work-6}
+:work-117:   {work-7}
+:work-11all: {work-all}

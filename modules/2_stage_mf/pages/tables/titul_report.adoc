@@ -1,0 +1,91 @@
+include::../common/contract.adoc[]
+// tag::titul_start_utv[]
+[cols="1,10,1,10,1", grid=none, frame=none]
+|===
+|
+^| [.my-title-table]#*УТВЕРЖДАЮ*#
+|
+^| [.my-title-table]#*УТВЕРЖДАЮ*#
+|
+|===
+// tag::titul_start_utv2[]
+[cols="1,10,1,10,1", grid=none, frame=none]
+|===
+|
+^| [.my-title-table]#{job10}#
+|
+^| [.my-title-table]#{job20}#
+|
+|
+|
+|
+|
+|
+|                                                                          
+^| [.my-title-table]#+++_____________+++ {iof1}#
+|
+^| [.my-title-table]#+++_____________+++ {iof2}#
+|
+|
+|
+|
+|
+|
+|
+^| [.my-title-table]#«+++____+++» +++________________+++ {year} г.#
+|
+^| [.my-title-table]#«+++____+++» +++_______________+++ {year} г.#                                                                                                          
+|
+|===
+// end::titul_start_utv2[]
+[cols="1*", grid=none, frame=none]
+|===
+^| [.my-title-table]#{name4_dokument}# +
+[.my-title-table]#{name3_dokument}# +
+[.my-title-table]#{name2_dokument}# +
+|===
+// end::titul_start_utv[]
+
+[cols="1*", grid=none, frame=none]
+|===
+^| [.my-title-table]#*{name1_dokument}*#                                              
+^| [.my-title-table]#{name5_dokument}#
+^| [.my-title-table]#Договор {сontract_number} ({stage} этап)# +     
+[.my-title-table]#(Государственный контракт {state_сontract})# +
+|===
+
+
+[cols="1,10,1,10,1", grid=none, frame=none]
+|===
+|{nbsp}
+|
+|
+|                                                                                                                         
+|
+|{nbsp}
+|
+|
+|
+|                                                                                                                         
+|
+|
+|
+
+^|  [.my-title-table]#*СОГЛАСОВАНО*#
+|
+|
+|
+|                                                                                                                         
+^| [.my-title-table]#{job30}#
+|
+|
+|
+|  
+^| [.my-title-table]#+++_______________+++ {iof3}#
+|
+|                                                                                                                        
+|
+|
+^| [.my-title-table]#«+++____+++» +++________________+++ {year} г.#
+|
+|===

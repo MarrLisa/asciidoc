@@ -1,0 +1,23 @@
+[cols="2,2,2,5,3", options="header"]
+|===
+^| Сущность (Таблица) ^| Атрибут         ^| Тип данных ^| Описание                                                      ^| Связь с другими сущностями
+.12+| Module (Модули)    | Id              | integer    | Первичный ключ                                                | –                         
+                    | Title           | varchar    | Заголовок модуля                                              | –                         
+                    | Name            | varchar    | Системное имя модуля                                          | –                         
+                    | Urn             | varchar    | URN модуля                                                    | –                         
+                    | Type            | integer    | Тип модуля (раздел, ссылка, представление данных, форма)      | –                         
+                    | NavMenuPosition | integer    | Позиция в меню навигации                                      | –                         
+                    | IsActive        | boolean    | Флаг активности модуля                                        | –                         
+                    | InHeader        | boolean    | Флаг отображения в шапке                                      | –                         
+                    | Order           | integer    | Порядок отображения в меню                                    | –                         
+                    | TemplateId      | integer    | Внешний ключ, ссылающийся на таблицу Template                 | Template                  
+                    | ParentId        | integer    | Внешний ключ, ссылающийся на Id другого модуля (для иерархии) | Module                    
+                    | Policy          | varchar    | Политика доступа к модулю                                     | –                         
+.7+| Template (Шаблоны) | Id              | integer    | Первичный ключ                                                | –                         
+                    | Name            | varchar    | Название шаблона                                              | –                         
+                    | Title           | varchar    | Заголовок шаблона                                             | –                         
+                    | IsPublished     | boolean    | Флаг публикации шаблона                                       | –                         
+                    | Type            | integer    | Тип шаблона                                                   | –                         
+                    | ViewJson        | text       | JSON-конфигурация отображения данных                          | –                         
+                    | QueryJson       | text       | JSON-конфигурация запроса к БД                                | –                         
+|===

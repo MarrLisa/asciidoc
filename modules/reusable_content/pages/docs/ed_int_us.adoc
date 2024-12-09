@@ -1,0 +1,22 @@
+:figure-caption!:
+:table-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=400, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:image-default-align: center
+:doctype: book
+:sectnums:
+:xrefstyle: full
+:section-refsig: разделе
+include::master_text.adoc[]
+:docinfo: shared
+
+== Типовые управляющие элементы интерфейса пользователя 
+
+Перечень и описание типовых управляющих элементов интерфейса пользователя модуля приведены в <<id_table_t_ed_int_us, Таблице {counter:table-number}>>.
+
+[[id_table_t_ed_int_us]]
+.Таблица {counter:table-number}. Типовые управляющие элементы интерфейса пользователя модуля
+include::../tables/t_ed_int_us.adoc[]

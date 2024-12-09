@@ -1,0 +1,30 @@
+include::../common/contract.adoc[]
+:sectnumlevels: 7
+:!sectnums: 
+:preface-title: Приложение 1
+
+
+<<<<
+
+[#application_1]
+
+[%notitle]
+== Приложение 1
+
+[.custom-heading]
+Приложение 1
+
+[.my-bold-title]
+Доработки ППО
+
+[cols="1,6,3,3", options="header"]
+|===
+^| № п/п    ^| Наименование подсистемы (модуля, компонента) ^| План-задание на доработку ППО ^| Выполненные работы по План-заданию на доработку ППО
+| 1.       
+
+| {name2_dokument} 
+
+| {ft} 
+
+| {completed_work}
+|===

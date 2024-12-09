@@ -1,0 +1,9 @@
+:doctype: book
+:year: 2024
+:city: Москва
+
+// = {name2_dokument}
+
+// :title-page: — это директива, которая создает отдельную страницу титульного листа для документа.
+
+include::../tables/titul.adoc[]

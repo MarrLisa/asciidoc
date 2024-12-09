@@ -1,0 +1,45 @@
+include::common/contract.adoc[]
+include::common_rms/rms_3_common.adoc[]
+:docinfo: shared
+:!chapter-signifier:
+:!section-refsig:
+:figure-caption!:
+:imagesdir: ../images
+:table-caption!: 
+:section-refsig: разделе
+:toc: macro
+:toc-title: Содержание 
+:name1_dokument: Частное техническое задание
+:sectnumlevels: 7
+// Кол-во страниц соответствует пдф и версия
+:version: 1
+:page_all: 22
+:code: ТЗ-04
+:toclevels: 4
+:ramka: 1
+// :title-page: — это директива, которая создает отдельную страницу титульного листа для документа.
+
+// вставляем первую половину док
+include::common/rms_terms_of_reference.adoc[tag=start_section]
+
+// вставляем ФТ
+
+=== {common_ft}
+
+// tag::ft_rms_nnn[]
+==== {ft} 
+
+варпапрвапр
+апрвыапвыапыва
+выапвап
+
+ыапывап
+выапваып
+
+ывапваыпвы
+ыапва
+// end::ft_rms_nnn[]
+
+// вставляем вторую половину док
+include::common/rms_terms_of_reference.adoc[tag=end_section]
+

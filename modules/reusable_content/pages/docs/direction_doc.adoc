@@ -1,0 +1,26 @@
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+// Описание модального окна «Направление документа на согласование»
+// Используется в файлах: approval_1.adoc, approval_cz.adoc, delete_otb.adoc, protocol_opening.adoc, protocol_review.adoc, protocol_summary.adoc,  protocol_summary_cz.adoc, sign_ap_1.adoc, sign_ap_accr_1.adoc, sign_exp_1.adoc, withdraw_application.adoc
+
+Откроется модальное окно «Направление документа на согласование».
+
+В модальном окне две вкладки:
+
+. «Визуализация документа» – отображает сформированный PDF-документ.
+. «Подписываемые данные» – отображает сформированный XML-документ.
+
+ifndef::role5,role5_cz[]
+Для отправки документа на согласование необходимо нажать кнопку «Отправить». 
+{but_cancel} отправка на согласование не происходит
+endif::[]

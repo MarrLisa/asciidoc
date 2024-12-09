@@ -1,0 +1,42 @@
+:docinfo: shared
+:figure-caption!:
+:image-size: width=642, height=auto
+:image-size1: width=450, height=auto 
+:image-size2: width=320, height=auto 
+:imagesdir: ../images/
+:iconsdir: ../icons/
+:doctype: book
+:sectnums:
+:xrefstyle: full
+include::master_text.adoc[]
+:docinfo: shared
+
+//Описание действий при удаление версии субсидии созданной на Портале
+// используется только в РП1
+
+=== Удаление версии профиля субсидии
+
+Если измененная версия создана непосредственно на Портале, а не поступила из Реестра субсидий Подсистемы, ее возможно удалить пока она находится в статусе {st_draf}. 
+Для этого необходимо в информационном блоке нажать на иконку image:{iconsdir}delete.png[width=16,height=16], как на <<id_image-g_sd_1, Рисунке {counter:figure-number}>>. 
+
+[[id_image-g_sd_1]]
+.Рисунок {counter:figure-number}. Иконка «Удалить версию»
+image::g_sd_1.png[{image-size}, align="center"] 
+
+{but_delete}.
+После подтверждения версия профиля субсидии полностью удаляется.
+
+Удалить версию возможно при условиях:
+
+* версия находится в статусе {st_draf};
+* версия не поступила из Реестра субсидий Подсистемы.
+
+В остальных случаях иконка image:{iconsdir}delete.png[width=16,height=16] не отображается.
+
+====
+[%unbreakable, grid=none, frame=none, cols="1,15"]
+|===
+^.^| image:{iconsdir}warning.png[16,16] |
+Удаление версии невозможно отменить.
+|===
+====
